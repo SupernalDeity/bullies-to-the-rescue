@@ -1,4 +1,4 @@
-const { Schema, model } = rquire('mongoose');
+const { Schema, model } = require('mongoose');
 
 const fosterSchema = new Schema(
   {
