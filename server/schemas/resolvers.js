@@ -43,6 +43,10 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
+    },
+    applicationSubmit: async (_, {input}) => {
+      const apply = await Application.create(input.application);
+      return apply;
     }
   }
 };
