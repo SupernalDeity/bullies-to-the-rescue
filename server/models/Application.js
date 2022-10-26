@@ -12,7 +12,7 @@ const appSchema = new Schema(
       required: true
     },
     coapplicant: {
-      name: String,
+      type: String,
       required: true,
       trim: true
     },
@@ -131,7 +131,7 @@ const appSchema = new Schema(
         required: true,
       },
     },
-    age: {
+    dogage: {
       type: String,
       required: true,
     },
@@ -282,6 +282,6 @@ const appSchema = new Schema(
   },
 )
 
-const application = model('Application', appSchema);
+const Application = model('Application', appSchema);
 
-module.exports = application;
+module.exports = Application;
