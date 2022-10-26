@@ -18,6 +18,9 @@ function Navbar() {
         <button onClick={logout}>
           Logout
         </button>
+        <Link to="/apply">
+        Apply
+      </Link>
       </>
     );
   }
@@ -30,8 +33,11 @@ function Navbar() {
       <Link to="/signup">
         Signup
       </Link>
+      <Link to="/apply">
+        Apply
+      </Link>
     </>
-  )
+  ) 
 }
 
 export default Navbar
