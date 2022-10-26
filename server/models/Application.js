@@ -26,7 +26,7 @@ const appSchema = new Schema(
       trim: true,
     },
     email: {
-      type: String, 
+      type: String,
       required: true,
     },
     phone: {
@@ -74,7 +74,7 @@ const appSchema = new Schema(
       required: true,
     },
     landlord: {
-      name:{
+      name: {
         type: String
       },
       number: {
@@ -94,15 +94,15 @@ const appSchema = new Schema(
       required: true,
     },
     airconditioning: {
-      home:{
-      type: Boolean,
+      home: {
+        type: Boolean,
         required: true,
       },
       car: {
         type: Boolean,
         required: true,
       },
-   },
+    },
     wheredog: {
       day: {
         type: String,
@@ -119,8 +119,8 @@ const appSchema = new Schema(
     },
     family: {
       willingness: {
-      type: String,
-      required: true,
+        type: String,
+        required: true,
       },
       why: {
         type: String,
@@ -130,155 +130,155 @@ const appSchema = new Schema(
         type: String,
         required: true,
       },
+    },
+    age: {
+      type: String,
+      required: true,
+    },
+    currentpets: {
+      type: String,
+      required: true,
+    },
+    medical: {
+      type: String,
+      required: true,
+    },
+    adoptwhen: {
+      type: String,
+      required: true,
+    },
+    surrenderpet: {
+      type: String,
+      required: true,
+    },
+    adoptedanimal: {
+      type: String,
+      required: true,
+    },
+    animalfriends: {
+      type: String,
+      required: true,
+    },
+    bite: {
+      type: String,
+      required: true,
+    },
+    heartworm: {
+      type: String,
+      required: true,
+    },
+    vetcare: {
+      type: String,
+      required: true,
+    },
+    vetinfo: {
+      office: {
+        type: String,
+        required: true,
       },
-      age: {
+      name: {
+        type: String,
+        required: true,
+      },
+      address: {
+        type: String,
+        required: true,
+      },
+      number: {
+        type: String,
+        required: true,
+      },
+    },
+    references: {
+      type: String,
+      required: true,
+    },
+    behavior: {
+      type: String,
+      required: true,
+    },
+    correction: {
+      type: String,
+      required: true,
+    },
+    crates: {
+      type: String,
+      required: true,
+    },
+    trainingissues: {
+      type: String,
+      required: true,
+    },
+    commonissues: {
+      type: String,
+      required: true,
+    },
+    questionare: {
+      heat: {
         type: Boolean,
         required: true,
       },
-      currentpets: {
+      food: {
+        type: Boolean,
+        required: true,
+      },
+      palate: {
+        type: Boolean,
+        required: true,
+      },
+      allergy: {
+        type: Boolean,
+        required: true,
+      },
+      spayneuter: {
         type: String,
         required: true,
       },
-      medical: {
+      proccessing: {
+        type: Boolean,
+        required: true,
+      },
+      hearsay: {
         type: String,
         required: true,
       },
-      adoptwhen: {
+      previouspurchase: {
         type: String,
         required: true,
       },
-      surrenderpet: {
-        type: String,
+      location: {
+        type: Boolean,
         required: true,
       },
-      adoptedanimal: {
-        type: String,
+      appfee: {
+        type: Boolean,
         required: true,
       },
-      animalfriends: {
-        type: String,
+      appvalid: {
+        type: Boolean,
         required: true,
       },
-      bite: {
-        type: String,
+      commitment: {
+        type: Boolean,
         required: true,
       },
-      heartworm: {
-        type: String,
+      donate: {
+        type: Boolean,
         required: true,
       },
-      vetcare: {
-        type: String,
+      accuracy: {
+        type: Boolean,
         required: true,
       },
-      vetinfo: {
-        office: {
-          type: String,
-          required: true,
-        },
-        name: {
-          type: String,
-          required: true,
-        },
-        address: {
-          type: String,
-          required: true,
-        },
-        number: {
-          type: String,
-          required: true,
-        },
+      comments: {
+        type: String,
+        trim: true,
       },
-      references: {
+      date: {
         type: String,
         required: true,
-      },
-      behavior: {
-        type: String,
-        required: true,
-      },
-      correction: {
-        type: String,
-        required: true,
-      },
-      crates: {
-        type: String,
-        required: true,
-      },
-      trainingissues: {
-        type: String,
-        required: true,
-      },
-      commonissues: {
-        type: String,
-        required: true,
-      },
-      questionare: {
-        heat: {
-          type: Boolean,
-          required: true,
-        },
-        food: {
-          type: Boolean,
-          required: true,
-        },
-        palate: {
-          type: Boolean,
-          required: true,
-        },
-        allergy: {
-          type: Boolean,
-          required: true,
-        },
-        spayneuter: {
-          type: String,
-          required: true,
-        },
-        proccessing: {
-          type: Boolean,
-          required: true,
-        },
-        hearsay: {
-          type: String,
-          required: true,
-        },
-        previouspurchase: {
-          type: String,
-          required: true,
-        },
-        location: {
-          type: Boolean,
-          required: true,
-        },
-        appfee: {
-          type: Boolean,
-          required: true,
-        },
-        appvalid: {
-          type: Boolean,
-          required: true,
-        },
-        commitment: {
-          type: Boolean,
-          required: true,
-        },
-        donate: {
-          type: Boolean,
-          required: true,
-        },
-        accuracy: {
-          type: Boolean,
-          required: true,
-        },
-        comments: {
-          type: String,
-          trim: true,
-        },
-        date: {
-          type: String,
-          required: true,
-        }
-      },
+      }
+    },
   },
 )
 
