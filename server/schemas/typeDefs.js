@@ -40,7 +40,7 @@ const typeDefs = gql`
     wheredog: Wheredog
     allergy: Boolean
     family: Family
-    age: String
+    dogage: String
     currentpets: String
     medical: String
     adoptwhen: String
@@ -81,7 +81,7 @@ const typeDefs = gql`
     children: String 
   }
 
-  type vetinfo {
+  type Vetinfo {
     office: String
     name: String
     address: String 
@@ -111,6 +111,7 @@ const typeDefs = gql`
     users: [User]
     user(id: ID!): User
     me: User
+    applications: [Application]
   }
 
   type Mutation {
