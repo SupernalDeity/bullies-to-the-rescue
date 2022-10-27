@@ -22,8 +22,8 @@ const Footer = () => {
     <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://www.facebook.com/b2trbullies/" className="hover:underline">Bullies 2 The Rescue™</a>. All Rights Reserved.
     </span>
 </footer>
-  );
-};
+  ); 
+}; 
 
 export default Footer;
 
