@@ -45,7 +45,7 @@ const Home = () => {
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            <polygon points="50,0 100,0 50,100 0,100" />
+            {/* <polygon points="50,0 100,0 50,100 0,100" /> */}
           </svg>
 
           
@@ -57,17 +57,37 @@ const Home = () => {
                 <span className="block xl:inline">Bullies</span>{' '}
                 <span className="block text-indigo-600 xl:inline">to the Rescue</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
+              <p>
+              Welcome to Bullies 2 the Rescue.  We are headquartered in North Carolina, in a pet supply store that is owned with the Rescue. Carolina Pet Pantry/Bullies 2 the Rescue is located in Indian Trail.  We also have satellite offices in South Carolina, Alabama and we cover Virginia and Maryland as well.
+              We are in need of volunteers, donations, supplies and support. We rely solely on donations for the care and treatment of the rescued Bulldogs that are admitted to our organization.
+
+
+
+We have approximately 50+ English or French Bulldogs in foster care at any given time.
+
+
+
+We provide our fosters food, treats, supplements, medical care, training and harnesses and leashes. 
+
               </p>
+              <div>
+              </div>
+              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              In 2021, B2TR rescued  172 bulldogs in need. We had 176 adoptions, 64 were foster fails and 57 were previous adopters!
+
+In 2021, we adopted to families in 14 states (DE, FL, GA, MA, MD, NC, NJ, OH, PA, SC, TN, TX, VA, WI) and the District of Columbia!
+
+
+We adopt to all U.S. states as long as you are able to come to us to adopt. We are based in NC.
+              </p>
+              
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
                   >
-                    Get started
+                    Adopt a Bulldog
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
