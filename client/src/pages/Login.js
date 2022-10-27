@@ -62,11 +62,10 @@ const Login = () => {
               alt="Your Company"
             />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
-              Sign in to your account
+              Login to your account
             </h2>
           </div>
           <form onSubmit={handleFormSubmit} className="mt-8 space-y-6" action="#" method="POST">
-            <input type="hidden" name="remember" defaultValue="true" />
             <div className="-space-y-px rounded-md shadow-sm">
               <div>
                 <label htmlFor="email-address" className="sr-only">
@@ -109,7 +108,7 @@ const Login = () => {
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                   <LockClosedIcon className="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" aria-hidden="true" />
                 </span>
-                Sign in
+                Login
               </button>
             </div>
           </form>
