@@ -6,16 +6,6 @@ import Auth from '../utils/auth';
 import { QUERY_USERS } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_USERS);
