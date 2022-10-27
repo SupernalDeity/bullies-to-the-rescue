@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
 import Auth from '../../utils/auth';
-
-import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -22,12 +18,14 @@ const navigationLoggedin = [
 ]
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  let classList = classes.filter(Boolean).join(' ');
+  console.log(classList);
+  return classList;
+  
 }
 
 function Navbar() {
   const [currentPage,setCurrentPage] = useState(window.location.pathname);
- 
   const logout = (event) => {
     event.preventDefault();
     Auth.logout();
@@ -158,10 +156,10 @@ function Navbar() {
                             key={item.name}
                             href={item.href}
                             className={classNames(
-                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                              item.href.toLowerCase()===currentPage.toLowerCase() ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                               'px-3 py-2 rounded-md text-sm font-medium'
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            aria-current={item.href.toLowerCase()===currentPage.toLowerCase() ? 'page' : undefined}
                           >
                             {item.name}
                           </a>
@@ -174,20 +172,21 @@ function Navbar() {
     
               <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 px-2 pt-2 pb-3">
-                  {navigation.map((item) => (
+                  {navigation.map((item) =>{ 
+                    return (
                     <Disclosure.Button
                       key={item.name}
                       as="a"
                       href={item.href}
                       className={classNames(
-                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        item.href.toLowerCase()===currentPage.toLowerCase() ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'block px-3 py-2 rounded-md text-base font-medium'
                       )}
-                      aria-current={item.current ? 'page' : undefined}
+                      aria-current={item.href.toLowerCase()===currentPage.toLowerCase() ? 'page' : undefined}
                     >
                       {item.name}
                     </Disclosure.Button>
-                  ))}
+                  )})}
                 </div>
               </Disclosure.Panel>
             </>
