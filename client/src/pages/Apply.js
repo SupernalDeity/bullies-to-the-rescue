@@ -4,35 +4,33 @@ import React from "react";
 const Apply = () => {
   return (
     <>
-      <div className="hidden sm:block" aria-hidden="true">
-        <div className="py-5">
-          <div className="border-t border-gray-200" />
-        </div>
-      </div>
-
       <div className="mt-10 sm:mt-0">
-        <div className="md:grid md:grid-cols-3 md:gap-6">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
-              <h3 className="text-lg font-medium leading-6 text-gray-900">
-                Apply Now!
-              </h3>
-              <p className="mt-1 text-sm text-gray-600">
-                Please read the entire application before beginning and note we
-                do require a $25 non-refundable application fee that you can pay
-                by clicking the DONATE button at the top of this page. Some
-                application fields may not allow you as much space as you'd like
-                to provide lots of details. That's ok! We will gladly discuss
-                those details on your phone interview. Thank you!
-              </p>
+              <div className="flex justify-center py-3">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl pb-5">
+                  <span className="block xl:inline">Apply</span>{' '}
+                  <span className="block text-indigo-600 xl:inline">Now</span>
+                </h1>
+              </div>
+              <div className="flex justify-center py-3">
+                <p className="ml-5 mt-1 text-md text-gray-600">
+                  Please read the entire application before beginning and note we 
+                  do require a $25 non-refundable application fee that you can pay
+                  by clicking the DONATE button at the top of this page. Some
+                  application fields may not allow you as much space as you'd like
+                  to provide lots of details. That's ok! We will gladly discuss
+                  those details on your phone interview. Thank you!
+                </p>
+              </div>
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="#" method="POST">
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
-                  <div className="grid grid-cols-6 gap-6">
-                    <div className="col-span-6 sm:col-span-4">
+                  <div className="grid gap-6">
+                    <div className="col-span-8 sm:col-span-4">
                       <label
                         htmlFor="full-name"
                         className="block text-sm font-medium text-gray-700"
@@ -3074,7 +3072,6 @@ const Apply = () => {
               </div>
             </form>
           </div>
-        </div>
       </div>
     </>
   );

@@ -43,11 +43,11 @@ const Home = () => {
 
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl pb-5">
                 <span className="block xl:inline">Bullies</span>{' '}
                 <span className="block text-indigo-600 xl:inline">2 the Rescue</span>
               </h1>
-              <p>
+              <p className='indent-10'>
               Welcome to Bullies 2 the Rescue.  We are headquartered in North Carolina, in a pet supply store that is owned with the Rescue. Carolina Pet Pantry/Bullies 2 the Rescue is located in Indian Trail.  We also have satellite offices in South Carolina, Alabama and we cover Virginia and Maryland as well.
               We are in need of volunteers, donations, supplies and support. We rely solely on donations for the care and treatment of the rescued Bulldogs that are admitted to our organization.
 
@@ -62,13 +62,13 @@ We provide our fosters food, treats, supplements, medical care, training and har
               </p>
               <div>
               </div>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-              In 2021, B2TR rescued  172 bulldogs in need. We had 176 adoptions, 64 were foster fails and 57 were previous adopters!
+              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0 indent-10">
+              In <span className='text-red-600'>2021</span>, B2TR rescued <span className='text-red-600'>172</span> bulldogs in need. We had <span className='text-red-600'>176</span> adoptions, <span className='text-red-600'>64</span> were foster fails and <span className='text-red-600'>57</span> were previous adopters!
 
-In 2021, we adopted to families in 14 states (DE, FL, GA, MA, MD, NC, NJ, OH, PA, SC, TN, TX, VA, WI) and the District of Columbia!
+In <span className='text-red-600'>2021</span>, we adopted to families in <span className='text-red-600'>14</span> states <span className='text-indigo-600'>(DE, FL, GA, MA, MD, NC, NJ, OH, PA, SC, TN, TX, VA, WI)</span> and the <span className='text-indigo-600'>District of Columbia</span>!
 
 
-We adopt to all U.S. states as long as you are able to come to us to adopt. We are based in NC.
+We adopt to all U.S. states as long as you are able to come to us to adopt. We are based in <span className='text-indigo-600'>NC</span>.
               </p>
               
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
