@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
+    <footer className="footer p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900">
     <div className="sm:flex sm:items-center sm:justify-center">
         <a href="https://www.facebook.com/b2trbullies/" className="flex items-center mb-4 sm:mb-0">
             <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" className="mr-3 h-8" alt="Facebook Logo" />
