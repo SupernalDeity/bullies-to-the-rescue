@@ -53,7 +53,7 @@ const Profile = () => {
     {
       id: 1,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Smooch',
       imageSrc: 'https://i.imgur.com/W26GMj7.jpg',
       imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -61,7 +61,7 @@ const Profile = () => {
     {
       id: 2,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Slinky',
       imageSrc: 'https://i.imgur.com/bhv9KX3.jpg',
       imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
@@ -69,7 +69,7 @@ const Profile = () => {
     {
       id: 3,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Benji',
       imageSrc: 'https://i.imgur.com/dB72kWL.jpg',
       imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
@@ -77,7 +77,7 @@ const Profile = () => {
     {
       id: 4,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Roger',
       imageSrc: 'https://i.imgur.com/Ab97Q8G.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -85,7 +85,7 @@ const Profile = () => {
     {
       id: 5,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'RollyPoly',
       imageSrc: 'https://i.imgur.com/dgUav2g.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -93,7 +93,7 @@ const Profile = () => {
     {
       id: 6,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Stitch',
       imageSrc: 'https://i.imgur.com/GWV1P2C.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -101,7 +101,7 @@ const Profile = () => {
     {
       id: 7,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Aries',
       imageSrc: 'https://i.imgur.com/CnOVLXj.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -109,7 +109,7 @@ const Profile = () => {
     {
       id: 8,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Trouble',
       imageSrc: 'https://i.imgur.com/VHXxXo5.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -117,7 +117,7 @@ const Profile = () => {
     {
       id: 9,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'ButterBall',
       imageSrc: 'https://i.imgur.com/I9R0vp8.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -125,7 +125,7 @@ const Profile = () => {
     {
       id: 10,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'LilSquish',
       imageSrc: 'https://i.imgur.com/MODDt8e.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -133,7 +133,7 @@ const Profile = () => {
     {
       id: 11,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Bella',
       imageSrc: 'https://i.imgur.com/PQ4P7q6.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
@@ -141,7 +141,7 @@ const Profile = () => {
     {
       id: 11,
       name: '',
-      href: '/Apply',
+      href: '#',
       price: 'Trixter',
       imageSrc: 'https://i.imgur.com/VEmhS0v.jpg',
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
