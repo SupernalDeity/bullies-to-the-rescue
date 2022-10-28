@@ -4,7 +4,7 @@ import React from "react";
 const Apply = () => {
   return (
     <>
-      <div className="mt-10 sm:mt-0">
+      <div className="max-w-3xl mx-auto mt-10 sm:mt-0">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <div className="flex justify-center py-3">
