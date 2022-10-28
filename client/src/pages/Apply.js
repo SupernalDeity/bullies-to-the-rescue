@@ -2690,7 +2690,11 @@ const Apply = () => {
 
                     <fieldset className="col-span-6 sm:col-span-4">
                       <legend className="contents text-base font-medium text-gray-700">
-                      Do you understand that it will take a minimum of 5-6 weeks to process this application? To check your application status, you agree to email us at applications@bullies2therescue.com instead of messaging FB, IG, or texting?
+                        Do you understand that it will take a minimum of 5-6
+                        weeks to process this application? To check your
+                        application status, you agree to email us at
+                        applications@bullies2therescue.com instead of messaging
+                        FB, IG, or texting?
                       </legend>
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
@@ -2729,7 +2733,9 @@ const Apply = () => {
                         htmlFor="employerphone"
                         className="block text-sm font-medium text-gray-700"
                       >
-                       How did you hear about Bullies 2 the Rescue? (ex: Family, Friend, Facebook, Instagram, TikTok, Twitter, Google, Local Event)
+                        How did you hear about Bullies 2 the Rescue? (ex:
+                        Family, Friend, Facebook, Instagram, TikTok, Twitter,
+                        Google, Local Event)
                       </label>
                       <input
                         type="text"
@@ -2738,7 +2744,323 @@ const Apply = () => {
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
-                    
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="employerphone"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Have you applied to purchase from a breeder or adopt
+                        from other rescue? Are you in any bulldog rehoming
+                        Facebook groups? If so, please list. If no, "N/A"
+                      </label>
+                      <input
+                        type="text"
+                        name="employerphone"
+                        id="employerphone"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        I understand that I must be willing and able to travel
+                        to Charlotte, NC to adopt.
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes, no problem!
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            No, I need someone to meet me halfway
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            No, I want to hire someone to bring me my bulldog
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Unsure, will need to discuss during the phone
+                            interview
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        I understand that application fee ($25) and adoption
+                        fees (generally range from $600-900) are non-negotiable
+                        and non-refundable. Deposits and payment plans are not
+                        accepted.
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes, I undestand
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            There's an adoption fee?
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        We/I understand this application, if approved, is valid
+                        for one year. If we/I have not adopted within that
+                        timeframe, we/I will re-apply and pay an additional
+                        application fee. *
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            We/ I agree
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            We/ I do NOT agree
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        By submitting this application, we/I agree that I have
+                        read this entire application and that adoption is a
+                        serious life-long commitment to which the entire family
+                        agrees. We/I understand that B2TR is a volunteer-run
+                        organization and these volunteers will spend hours
+                        thoroughly screening our/my application. It may take 5-6
+                        weeks to be contacted for a phone interview. We/I
+                        understand that if the Submit button is NOT RED, then
+                        we/I need to review my application and answer EVERY
+                        question. I also agree that I will email
+                        applications@bullies2therescue.com to check my
+                        application status.
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes, we/ I agree and understand
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            No, I didn't read it, I just want a cute bulldog
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        I have paid a non-refundable $25 application fee by
+                        clicking the Donate button on this website. You may
+                        include payment confirmation in the Comments section
+                        below or email a screenshot of payment confirmation to
+                        applications@bullies2therescue.com
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                        I attest that all answers on this application are
+                        accurate and complete. I understand that if any of my
+                        answers are found to be false or misleading by B2TR, my
+                        application will be denied and closed.
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="nodog"
+                            name="nodog"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="nodog"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="english"
+                            name="english"
+                            type="radio"
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="english"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Yes but I need to explain something on the interview
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="employerphone"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Comments, Questions, or Concerns?
+                      </label>
+                      <input
+                        type="text"
+                        name="employerphone"
+                        id="employerphone"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="employerphone"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Date and time:
+                      </label>
+                      <input
+                        type="text"
+                        name="employerphone"
+                        id="employerphone"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
@@ -2746,7 +3068,7 @@ const Apply = () => {
                     type="submit"
                     className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                   >
-                    Save
+                    Submit
                   </button>
                 </div>
               </div>
