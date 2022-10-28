@@ -26,153 +26,20 @@ function Applications() {
     return <Application id={selectedApplication} setShowOne={setShowOne}/>;
   }
 
-  return <div className="border-t border-gray-200">
+  return <div className="flex flex-row flex-wrap border-t border-gray-200">
     <dl>
       {
         data.applications.map(application=>(
-          <div key={application._id} className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-            <dt className="text-sm font-medium text-gray-500">Name</dt>
-            <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
-              {application.name} 
-              <button onClick={()=>handleApplication(application._id)} className="bg-gray-900 text-white">View Application</button></dd>
+          <div key={application._id} className="px-4 py-5">
+            <dt className="text-lg font-medium text-gray-500">Application: </dt>
+            <dd className="mt-1 text-lg text-gray-900">
+              {application.name}'s Application 
+              <button onClick={()=>handleApplication(application._id)} className="flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">View Application</button>
+            </dd>
           </div>
         ))
       }
     </dl>
   </div>
-
-  // return (
-  //       <div className="overflow-hidden bg-white shadow sm:rounded-lg">
-  //         <div className="px-4 py-5 sm:px-6">
-  //           <h3 className="text-lg font-medium leading-6 text-gray-900">Applicant Information</h3>
-  //           <p className="mt-1 max-w-2xl text-sm text-gray-500">Personal details and application.</p>
-  //         </div>
-  //         <div className="border-t border-gray-200">
-  //           <dl>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Age</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //             <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-  //               <dt className="text-sm font-medium text-gray-500">Full name</dt>
-  //               <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">Margot Foster</dd>
-  //             </div>
-  //           </dl>
-  //         </div>
-  //       </div>
-  //     )
     }
-
 export default Applications;
