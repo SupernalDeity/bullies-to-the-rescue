@@ -16,6 +16,7 @@ const navigationLoggedin = [
   { name: 'Available Dogs', href: '/Profile', current: false },
   { name: 'Apply', href: '/Apply', current: false },
   { name: 'Contact Us', href: '/Contact', current: false },
+  { name: 'View Forms', href: '/applications', current: false },
   { name: 'Logout', href: '/Login', current: false},
 ]
 

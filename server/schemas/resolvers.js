@@ -18,6 +18,9 @@ const resolvers = {
     },
     applications: async () => {
       return Application.find();
+    },
+    application: async (_, {id}) => {
+      return Application.findOne({_id:id});
     }
   },
 
