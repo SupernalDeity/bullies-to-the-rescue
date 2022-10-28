@@ -3,6 +3,7 @@ import { PaperClipIcon } from '@heroicons/react/20/solid'
 import { useQuery } from '@apollo/client'
 import { APPLICATIONS } from '../utils/queries'
 import Application from '../components/Application/';
+import Auth from '../utils/auth';
 
 function Applications() {
   const { loading, error, data} = useQuery(APPLICATIONS);
@@ -20,6 +21,10 @@ function Applications() {
   const handleApplication = id => {
     setSelectedApplication(id);
     setShowOne(true);
+  }
+
+  if (!Auth.loggedIn()) {
+    return <p>You can't come in here!</p>
   }
 
   if(showOne){

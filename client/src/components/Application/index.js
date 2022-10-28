@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useQuery } from "@apollo/client";
 import { APPLICATION } from "../../utils/queries";
+import Auth from "../../utils/auth";
 
 const Application = ({ id, setShowOne }) => {
   const { loading, error, data } = useQuery(APPLICATION, {
