@@ -210,6 +210,7 @@ const typeDefs = gql`
     user(id: ID!): User
     me: User
     applications: [Application]
+    application(id: ID!): Application
   }
 
   type Mutation {
