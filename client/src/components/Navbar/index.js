@@ -7,6 +7,7 @@ const navigation = [
   { name: 'Home', href: '/', current: false },
   { name: 'Available Dogs', href: '/Profile', current: false },
   { name: 'Apply', href: '/Apply', current: false },
+  { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Login', href: '/Login', current: false },
   { name: 'Signup', href: '/Signup', current: false },
 ]
@@ -14,6 +15,7 @@ const navigationLoggedin = [
   { name: 'Home', href: '/', current: false },
   { name: 'Available Dogs', href: '/Profile', current: false },
   { name: 'Apply', href: '/Apply', current: false },
+  { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Logout', href: '/Login', current: false},
 ]
 
