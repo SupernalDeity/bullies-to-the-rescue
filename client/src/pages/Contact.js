@@ -18,7 +18,6 @@ function Contact() {
             <form action="mailto:cannaestia@gmail.com" method="POST">
               <div className="shadow sm:overflow-hidden sm:rounded-md">
                 <div className="space-y-6 bg-white px-4 py-5 sm:p-6">
-
                   <div className="bg-white flex justify-center">
 
                     <h2 className="sr-only">Products</h2>
