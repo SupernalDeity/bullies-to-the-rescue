@@ -1,7 +1,8 @@
 [
   {
-    "username": "testuser",
-    "email": "test@user.com",
-    "password": "password1234"
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "@7xl!&48VsRC",
+    "admin": true
   }
 ]
