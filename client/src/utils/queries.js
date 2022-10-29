@@ -42,25 +42,28 @@ export const APPLICATIONS = gql`
 export const APPLICATION = gql`
   query application($id: ID!) {
     application(id: $id) {
-      _id
+        _id
       name
       age
       coapplicant
       coapplicantage
       address
+      addresstwo
       email
       phone
+      phonetype
       housemembers
       occupation
       employerinfo
+      employerphone
       coappoccupation
       coappemployerinfo
       ownbulldog
       medicalissues
       otherissues
-      dogbehavior
+      dogbehaviorissues
       dwellinginfo
-      landlord {
+      landlordinfo {
         name
         number
       }
@@ -80,10 +83,12 @@ export const APPLICATION = gql`
         willingness
         why
         children
+        childreninfo
+        childrensupervise
       }
       dogage
       currentpets
-      medical
+      medicalneeds
       adoptwhen
       surrenderpet
       adoptedanimal
@@ -91,18 +96,13 @@ export const APPLICATION = gql`
       bite
       heartworm
       vetcare
-      vetinfo {
-        office
-        name
-        address
-        number
-      }
+      vetinfo
       references
       behavior
       correction
       crates
       trainingissues
-      commonissues
+      commonhealthissues
       questionare {
         heat
         food
@@ -110,9 +110,9 @@ export const APPLICATION = gql`
         allergy
         spayneuter
         proccessing
-        hearsay
+        hearabout
         previouspurchase
-        location
+        travel
         appfee
         appvalid
         commitment

@@ -141,7 +141,7 @@ const Dogs = () => {
       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     {
-      id: 11,
+      id: 12,
       name: '',
       href: '/Apply',
       price: 'Trixter',

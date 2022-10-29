@@ -54,3 +54,89 @@ export const ADD_COMMENT = gql`
     }
   }
 `;
+
+export const ADD_APPLICATION = gql`
+  mutation addApplication($input: ApplicationInput!) {
+    applicationSubmit(input: $input) {
+      _id
+      name
+      age
+      coapplicant
+      coapplicantage
+      address
+      addresstwo
+      email
+      phone
+      phonetype
+      housemembers
+      occupation
+      employerinfo
+      employerphone
+      coappoccupation
+      coappemployerinfo
+      ownbulldog
+      medicalissues
+      otherissues
+      dogbehaviorissues
+      dwellinginfo
+      landlordinfo {
+        name
+        number
+      }
+      fencedyard
+      stairs
+      water
+      airconditioning {
+        home
+        car
+      }
+      wheredog {
+        day
+        night
+      }
+      allergy
+      family {
+        willingness
+        why
+        children
+        childreninfo
+        childrensupervise
+      }
+      dogage
+      currentpets
+      medicalneeds
+      adoptwhen
+      surrenderpet
+      adoptedanimal
+      animalfriends
+      bite
+      heartworm
+      vetcare
+      vetinfo
+      references
+      behavior
+      correction
+      crates
+      trainingissues
+      commonhealthissues
+      questionare {
+        heat
+        food
+        palate
+        allergy
+        spayneuter
+        proccessing
+        hearabout
+        previouspurchase
+        travel
+        appfee
+        appvalid
+        commitment
+        donate
+        accuracy
+        comments
+        date
+    }
+  }
+}
+`;

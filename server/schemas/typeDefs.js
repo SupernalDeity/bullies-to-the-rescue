@@ -21,7 +21,7 @@ const typeDefs = gql`
     coapplicant: String
     coapplicantage: Int
     address: String 
-    address2: String
+    addresstwo: String
     email: String 
     phone: String
     phonetype: String 
@@ -34,9 +34,9 @@ const typeDefs = gql`
     ownbulldog: String
     medicalissues: String
     otherissues: String 
-    dogbehavior: String
+    dogbehaviorissues: String
     dwellinginfo: String
-    landlord: Landlord
+    landlordinfo: Landlord
     fencedyard: String
     stairs: String 
     water: String 
@@ -71,7 +71,7 @@ const typeDefs = gql`
     coapplicant: String
     coapplicantage: Int
     address: String 
-    address2: String
+    addresstwo: String
     email: String 
     phone: String
     phonetype: String 
@@ -84,9 +84,9 @@ const typeDefs = gql`
     ownbulldog: String
     medicalissues: String
     otherissues: String 
-    dogbehavior: String
+    dogbehaviorissues: String
     dwellinginfo: String
-    landlord: _Landlord
+    landlordinfo: _Landlord
     fencedyard: String
     stairs: String 
     water: String 
