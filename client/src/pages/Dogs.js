@@ -8,7 +8,7 @@ import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
 
-const Profile = () => {
+const Dogs = () => {
   const { id } = useParams();
 
   // Get current user
@@ -26,7 +26,7 @@ const Profile = () => {
 
   // redirect to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data._id === id) {
-    return <Navigate to="/Profile" replace />;
+    return <Navigate to="/Dogs" replace />;
   }
 
   if (loading) {
@@ -202,4 +202,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Dogs;
