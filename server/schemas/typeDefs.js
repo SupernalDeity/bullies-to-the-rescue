@@ -6,6 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
+    admin: Boolean
   }
 
   type Auth {
@@ -20,29 +21,32 @@ const typeDefs = gql`
     coapplicant: String
     coapplicantage: Int
     address: String 
+    address2: String
     email: String 
-    phone: String 
+    phone: String
+    phonetype: String 
     housemembers: String 
     occupation: String 
     employerinfo: String 
+    employerphone: String
     coappoccupation: String 
     coappemployerinfo: String
-    ownbulldog: Boolean
-    medicalissues: Boolean
+    ownbulldog: String
+    medicalissues: String
     otherissues: String 
-    dogbehavior: Boolean
-    dwellinginfo: Boolean
+    dogbehavior: String
+    dwellinginfo: String
     landlord: Landlord
     fencedyard: String
     stairs: String 
     water: String 
     airconditioning: Airconditioning
     wheredog: Wheredog
-    allergy: Boolean
+    allergy: String
     family: Family
     dogage: String
     currentpets: String
-    medical: String
+    medicalneeds: String
     adoptwhen: String
     surrenderpet: String
     adoptedanimal: String
@@ -50,13 +54,13 @@ const typeDefs = gql`
     bite: String 
     heartworm: String 
     vetcare: String 
-    vetinfo: Vetinfo
+    vetinfo: String
     references: String 
     behavior: String 
     correction: String 
     crates: String 
     trainingissues: String 
-    commonissues: String 
+    commonhealthissues: String 
     questionare: Questionaire
   }
 
@@ -67,29 +71,32 @@ const typeDefs = gql`
     coapplicant: String
     coapplicantage: Int
     address: String 
+    address2: String
     email: String 
-    phone: String 
+    phone: String
+    phonetype: String 
     housemembers: String 
     occupation: String 
     employerinfo: String 
+    employerphone: String
     coappoccupation: String 
     coappemployerinfo: String
-    ownbulldog: Boolean
-    medicalissues: Boolean
+    ownbulldog: String
+    medicalissues: String
     otherissues: String 
-    dogbehavior: Boolean
-    dwellinginfo: Boolean
+    dogbehavior: String
+    dwellinginfo: String
     landlord: _Landlord
     fencedyard: String
     stairs: String 
     water: String 
     airconditioning: _Airconditioning
     wheredog: _Wheredog
-    allergy: Boolean
+    allergy: String
     family: _Family
     dogage: String
     currentpets: String
-    medical: String
+    medicalneeds: String
     adoptwhen: String
     surrenderpet: String
     adoptedanimal: String
@@ -97,13 +104,13 @@ const typeDefs = gql`
     bite: String 
     heartworm: String 
     vetcare: String 
-    vetinfo: _Vetinfo
+    vetinfo: String
     references: String 
     behavior: String 
     correction: String 
     crates: String 
     trainingissues: String 
-    commonissues: String 
+    commonhealthissues: String 
     questionare: _Questionaire
   }  
 
@@ -118,13 +125,13 @@ const typeDefs = gql`
   }
 
   type Airconditioning {
-    home: Boolean
-    car: Boolean
+    home: String
+    car: String
   }
 
   input _Airconditioning {
-    home: Boolean
-    car: Boolean
+    home: String
+    car: String
   }
 
   type Wheredog {
@@ -141,41 +148,31 @@ const typeDefs = gql`
     willingness: String
     why: String
     children: String 
+    childreninfo: String
+    childrensupervise: String
   }
 
   input _Family {
     willingness: String
     why: String
     children: String 
-  }
-
-  type Vetinfo {
-    office: String
-    name: String
-    address: String 
-    number: String 
-  }
-
-  input _Vetinfo {
-    office: String
-    name: String
-    address: String 
-    number: String 
+    childreninfo: String
+    childrensupervise: String
   }
 
   type Questionaire {
-    heat: Boolean
-    food: Boolean
-    palate: Boolean
-    allergy: Boolean
+    heat: String
+    food: String
+    palate: String
+    allergy: String
     spayneuter: String 
     proccessing: Boolean
-    hearsay: String 
+    hearabout: String 
     previouspurchase: String 
-    location: Boolean 
-    appfee: Boolean
-    appvalid: Boolean
-    commitment: Boolean
+    travel: String 
+    appfee: String
+    appvalid: String
+    commitment: String
     donate: Boolean
     accuracy: Boolean
     comments: String 
@@ -183,18 +180,18 @@ const typeDefs = gql`
   }
 
   input _Questionaire {
-    heat: Boolean
-    food: Boolean
-    palate: Boolean
-    allergy: Boolean
+    heat: String
+    food: String
+    palate: String
+    allergy: String
     spayneuter: String 
     proccessing: Boolean
-    hearsay: String 
+    hearabout: String 
     previouspurchase: String 
-    location: Boolean 
-    appfee: Boolean
-    appvalid: Boolean
-    commitment: Boolean
+    travel: String 
+    appfee: String
+    appvalid: String
+    commitment: String
     donate: Boolean
     accuracy: Boolean
     comments: String 
@@ -214,7 +211,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addUser(email:String!, username:String!, password:String!): Auth
+    addUser(email:String!, username:String!, password:String!, admin:Boolean): Auth
     login(email:String!, password:String!): Auth
     applicationSubmit(input:ApplicationInput!): Application
   }

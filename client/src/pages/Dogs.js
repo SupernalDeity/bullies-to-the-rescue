@@ -8,7 +8,7 @@ import { QUERY_USERS, QUERY_USER, QUERY_ME } from '../utils/queries';
 // Components
 import UserList from '../components/UserList';
 
-const Profile = () => {
+const Dogs = () => {
   const { id } = useParams();
 
   // Get current user
@@ -26,7 +26,7 @@ const Profile = () => {
 
   // redirect to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data._id === id) {
-    return <Navigate to="/Profile" replace />;
+    return <Navigate to="/Dogs" replace />;
   }
 
   if (loading) {
@@ -167,6 +167,16 @@ const Profile = () => {
         <span className="block xl:inline">Meet</span>{' '}
         <span className="block text-indigo-600 xl:inline">a Bulldog</span>
       </h1>
+      <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center">
+        <div className="rounded-md shadow">
+          <a
+            href='/Apply'
+            className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
 
         <h2 className="sr-only">Products</h2>
@@ -192,4 +202,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Dogs;
