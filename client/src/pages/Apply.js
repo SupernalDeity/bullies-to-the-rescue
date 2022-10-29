@@ -4,7 +4,8 @@ import React from "react";
 const Apply = () => {
   return (
     <>
-      <div className="max-w-3xl mx-auto mt-10 sm:mt-0">
+    <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
+      <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <div className="flex justify-center py-3">
@@ -2980,6 +2981,7 @@ const Apply = () => {
               </div>
             </form>
           </div>
+      </div>
       </div>
     </>
   );
