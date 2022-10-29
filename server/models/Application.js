@@ -25,11 +25,20 @@ const appSchema = new Schema(
       required: true,
       trim: true,
     },
+    address2: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     email: {
       type: String,
       required: true,
     },
     phone: {
+      type: String,
+      required: true,
+    },
+    phonetype: {
       type: String,
       required: true,
     },
@@ -45,6 +54,10 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
+    employerphone: {
+      type: String,
+      required: true,
+    },
     coappoccupation: {
       type: String,
       required: true,
@@ -54,26 +67,26 @@ const appSchema = new Schema(
       required: true,
     },
     ownbulldog: {
-      type: Boolean,
+      type: String,
       required: true,
     },
     medicalissues: {
-      type: Boolean,
+      type: String,
       required: true,
     },
     otherissues: {
       type: String,
       required: true,
     },
-    dogbehavior: {
-      type: Boolean,
+    dogbehaviorissues: {
+      type: String,
       required: true,
     },
     dwellinginfo: {
-      type: Boolean,
+      type: String,
       required: true,
     },
-    landlord: {
+    landlordinfo: {
       name: {
         type: String
       },
@@ -95,11 +108,11 @@ const appSchema = new Schema(
     },
     airconditioning: {
       home: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       car: {
-        type: Boolean,
+        type: String,
         required: true,
       },
     },
@@ -114,7 +127,7 @@ const appSchema = new Schema(
       },
     },
     allergy: {
-      type: Boolean,
+      type: String,
       required: true,
     },
     family: {
@@ -130,6 +143,14 @@ const appSchema = new Schema(
         type: String,
         required: true,
       },
+      childreninfo: {
+        type: String,
+        required: true,
+      },
+      childrensupervise: {
+        type: String,
+        required: true,
+      },
     },
     dogage: {
       type: String,
@@ -139,7 +160,7 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    medical: {
+    medicalneeds: {
       type: String,
       required: true,
     },
@@ -172,22 +193,8 @@ const appSchema = new Schema(
       required: true,
     },
     vetinfo: {
-      office: {
-        type: String,
-        required: true,
-      },
-      name: {
-        type: String,
-        required: true,
-      },
-      address: {
-        type: String,
-        required: true,
-      },
-      number: {
-        type: String,
-        required: true,
-      },
+      type: String,
+      required: true,
     },
     references: {
       type: String,
@@ -209,25 +216,25 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    commonissues: {
+    commonhealthissues: {
       type: String,
       required: true,
     },
     questionare: {
       heat: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       food: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       palate: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       allergy: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       spayneuter: {
@@ -238,7 +245,7 @@ const appSchema = new Schema(
         type: Boolean,
         required: true,
       },
-      hearsay: {
+      hearabout: {
         type: String,
         required: true,
       },
@@ -246,20 +253,20 @@ const appSchema = new Schema(
         type: String,
         required: true,
       },
-      location: {
-        type: Boolean,
+      travel: {
+        type: String,
         required: true,
       },
       appfee: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       appvalid: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       commitment: {
-        type: Boolean,
+        type: String,
         required: true,
       },
       donate: {
