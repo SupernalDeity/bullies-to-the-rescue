@@ -11,10 +11,10 @@ const products = [
 function Contact() {
   return (
     <>
-      <div>
-        <div className="ml-12 mr-12">
+      <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
+        <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
 
-          <div className="mt-5 md:col-span-2 md:mt-0 ml-12 mr-12">
+          <div className="mt-5 md:col-span-2 md:mt-0">
             <form action="mailto:cannaestia@gmail.com" method="POST">
               <div className="shadow sm:overflow-hidden sm:rounded-md">
                 <div className="space-y-6 bg-white px-4 py-5 sm:p-6">

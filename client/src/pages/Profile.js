@@ -162,7 +162,7 @@ const Profile = () => {
 
   return (
 
-    <div className="bg-white">
+    <div className="bg-[url('https://i.imgur.com/G0HwpRx.jpg')] bg-fixed bg-cover">
       <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl text-center mt-5">
         <span className="block xl:inline">Meet</span>{' '}
         <span className="block text-indigo-600 xl:inline">a Bulldog</span>
@@ -183,7 +183,7 @@ const Profile = () => {
                 />
               </div>
               <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-              <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+              <p className="mt-1 text-lg font-medium text-center text-gray-900">{product.price}</p>
             </a>
           ))}
         </div>
