@@ -25,7 +25,7 @@ const appSchema = new Schema(
       required: true,
       trim: true,
     },
-    address2: {
+    addresstwo: {
       type: String,
       required: true,
       trim: true,
