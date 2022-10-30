@@ -1,29 +1,30 @@
 // Node Modules
 import React from "react";
-import { useMutation } from '@apollo/client';
-import { ADD_APPLICATION } from '../utils/mutations';
+import { useMutation } from "@apollo/client";
+import { ADD_APPLICATION } from "../utils/mutations";
 
 const Apply = () => {
   return (
     <>
-    <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
-      <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
+      <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
+        <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
           <div className="md:col-span-1">
             <div className="px-4 sm:px-0">
               <div className="flex justify-center py-3">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl pb-5">
-                  <span className="block xl:inline">Apply</span>{' '}
+                  <span className="block xl:inline">Apply</span>{" "}
                   <span className="block text-indigo-600 xl:inline">Now</span>
                 </h1>
               </div>
               <div className="flex justify-center py-3">
                 <p className="ml-5 mt-1 text-md text-gray-600">
-                  Please read the entire application before beginning and note we 
-                  do require a $25 non-refundable application fee that you can pay
-                  by clicking the DONATE button at the top of this page. Some
-                  application fields may not allow you as much space as you'd like
-                  to provide lots of details. That's ok! We will gladly discuss
-                  those details on your phone interview. Thank you!
+                  Please read the entire application before beginning and note
+                  we do require a $25 non-refundable application fee that you
+                  can pay by clicking the DONATE button at the top of this page.
+                  Some application fields may not allow you as much space as
+                  you'd like to provide lots of details. That's ok! We will
+                  gladly discuss those details on your phone interview. Thank
+                  you!
                 </p>
               </div>
             </div>
@@ -277,8 +278,8 @@ const Apply = () => {
                           <input
                             id="nodog"
                             name="nodog"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="nodog"
@@ -287,12 +288,12 @@ const Apply = () => {
                             No, we have never had a bulldog
                           </label>
                         </div>
-                        <div className="flex items-center">
+                        <div className="flex item s-center">
                           <input
                             id="english"
                             name="english"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="english"
@@ -305,8 +306,8 @@ const Apply = () => {
                           <input
                             id="french"
                             name="french"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="french"
@@ -319,8 +320,8 @@ const Apply = () => {
                           <input
                             id="olde-english"
                             name="olde-english"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="olde-english"
@@ -333,8 +334,8 @@ const Apply = () => {
                           <input
                             id="american"
                             name="american"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="american"
@@ -347,8 +348,8 @@ const Apply = () => {
                           <input
                             id="mix"
                             name="mix"
-                            type="radio"
-                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            type="checkbox"
+                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
                             htmlFor="mix"
@@ -372,15 +373,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="comments"
-                              name="comments"
+                              id="tears"
+                              name="tears"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="comments"
+                              htmlFor="tears"
                               className="font-medium text-gray-700"
                             >
                               ACL Tears
@@ -391,15 +392,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="candidates"
-                              name="candidates"
+                              id="addisons"
+                              name="addisons"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="candidates"
+                              htmlFor="addisons"
                               className="font-medium text-gray-700"
                             >
                               Addison's Disease
@@ -410,15 +411,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="allergyenv"
+                              name="allergyenv"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="allergyenv"
                               className="font-medium text-gray-700"
                             >
                               Allergies: Environmetal
@@ -429,15 +430,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="allergyfood"
+                              name="allergyfood"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="allergyfood"
                               className="font-medium text-gray-700"
                             >
                               Allergies: Food
@@ -448,15 +449,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="arthritis"
+                              name="arthritis"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="arthritis"
                               className="font-medium text-gray-700"
                             >
                               Arthritis
@@ -467,15 +468,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="pneumonia"
+                              name="pneumonia"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="pneumonia"
                               className="font-medium text-gray-700"
                             >
                               Aspiration Pneumonia
@@ -486,15 +487,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="ataxia"
+                              name="ataxia"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="ataxia"
                               className="font-medium text-gray-700"
                             >
                               Ataxia
@@ -505,15 +506,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hemotoma"
+                              name="hemotoma"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hemotoma"
                               className="font-medium text-gray-700"
                             >
                               Aural Hemotoma
@@ -524,15 +525,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="autoimmune"
+                              name="autoimmune"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="autoimmune"
                               className="font-medium text-gray-700"
                             >
                               Autoimmune Disorders
@@ -543,15 +544,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="bstones"
+                              name="bstones"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="bstones"
                               className="font-medium text-gray-700"
                             >
                               Bladder Stones
@@ -562,15 +563,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="blindness"
+                              name="blindness"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="blindness"
                               className="font-medium text-gray-700"
                             >
                               Blindness
@@ -581,15 +582,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="bloat"
+                              name="bloat"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="bloat"
                               className="font-medium text-gray-700"
                             >
                               Bloat
@@ -600,15 +601,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="tumors"
+                              name="tumors"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="tumors"
                               className="font-medium text-gray-700"
                             >
                               Brain Tumors
@@ -619,15 +620,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="cancer"
+                              name="cancer"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="cancer"
                               className="font-medium text-gray-700"
                             >
                               Cancer
@@ -638,15 +639,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="cherry"
+                              name="cherry"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="cherry"
                               className="font-medium text-gray-700"
                             >
                               Cherry Eye
@@ -657,15 +658,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="cleft"
+                              name="cleft"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="cleft"
                               className="font-medium text-gray-700"
                             >
                               Cleft Palate
@@ -676,15 +677,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="crypt"
+                              name="crypt"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="crypt"
                               className="font-medium text-gray-700"
                             >
                               Cryptorchid
@@ -695,15 +696,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="cushings"
+                              name="cushings"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="cushings"
                               className="font-medium text-gray-700"
                             >
                               Cushing's Disease
@@ -714,15 +715,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="deafness"
+                              name="deafness"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="deafness"
                               className="font-medium text-gray-700"
                             >
                               Deafness
@@ -1863,7 +1864,7 @@ const Apply = () => {
                         </div>
                       </div>
                     </fieldset>
-                    
+
                     <div className="col-span-6 sm:col-span-4">
                       <label
                         htmlFor="employerphone"
@@ -2383,13 +2384,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesheat"
+                            name="dogheat"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2397,13 +2398,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noheat"
+                            name="dogheat"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2411,13 +2412,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="french"
-                            name="french"
+                            id="idkheat"
+                            name="dogheat"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="french"
+                            htmlFor="idkheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2434,13 +2435,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesfood"
+                            name="premiumfood"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesfood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2448,13 +2449,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="nofood"
+                            name="premiumfood"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="nofood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2462,13 +2463,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="french"
-                            name="french"
+                            id="idkfood"
+                            name="premiumfood"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="french"
+                            htmlFor="idkfood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2485,13 +2486,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yespalate"
+                            name="softpalate"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yespalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2499,13 +2500,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="nopalate"
+                            name="softpalate"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="nopalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2513,13 +2514,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="french"
-                            name="french"
+                            id="idkpalate"
+                            name="softpalate"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="french"
+                            htmlFor="idkpalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2536,13 +2537,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesallergy"
+                            name="allergyaware"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2550,13 +2551,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noallergy"
+                            name="allergyaware"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2564,13 +2565,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="french"
-                            name="french"
+                            id="idkallergy"
+                            name="allergyaware"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="french"
+                            htmlFor="idkallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2608,13 +2609,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesappstatus"
+                            name="appstatus"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesappstatus"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2622,13 +2623,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noappstatus"
+                            name="appstatus"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noappstatus"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2679,13 +2680,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yestravel"
+                            name="willingtotravel"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yestravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, no problem!
@@ -2693,13 +2694,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="halfwaytravel"
+                            name="willingtotravel"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="halfwaytravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I need someone to meet me halfway
@@ -2707,13 +2708,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="notravel"
+                            name="willingtotravel"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="notravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I want to hire someone to bring me my bulldog
@@ -2721,13 +2722,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="idktravel"
+                            name="willingtotravel"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="idktravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Unsure, will need to discuss during the phone
@@ -2747,13 +2748,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesadoptfee"
+                            name="adoptfee"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesadoptfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, I undestand
@@ -2761,13 +2762,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noadoptfee"
+                            name="adoptfee"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noadoptfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             There's an adoption fee?
@@ -2786,13 +2787,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesagreement"
+                            name="agreement"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesagreement"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I agree
@@ -2800,13 +2801,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noagreement"
+                            name="agreement"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noagreement"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I do NOT agree
@@ -2833,13 +2834,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesagreement2"
+                            name="agreement2"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesagreement2"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, we/ I agree and understand
@@ -2847,13 +2848,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="noagreement2"
+                            name="agreement2"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="noagreement2"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I didn't read it, I just want a cute bulldog
@@ -2873,13 +2874,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesfeepaid"
+                            name="feepaid"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesfeepaid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2887,13 +2888,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="nofeepaid"
+                            name="feepaid"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="nofeepaid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2912,13 +2913,13 @@ const Apply = () => {
                       <div className="mt-4 space-y-4">
                         <div className="flex items-center">
                           <input
-                            id="nodog"
-                            name="nodog"
+                            id="yesaccurate"
+                            name="accurate"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="yesaccurate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2926,13 +2927,13 @@ const Apply = () => {
                         </div>
                         <div className="flex items-center">
                           <input
-                            id="english"
-                            name="english"
+                            id="yeskindaaccurate"
+                            name="accurate"
                             type="radio"
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="yeskindaaccurate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes but I need to explain something on the interview
@@ -2983,7 +2984,7 @@ const Apply = () => {
               </div>
             </form>
           </div>
-      </div>
+        </div>
       </div>
     </>
   );
