@@ -43,10 +43,10 @@ const Login = () => {
   const renderForm = () => {
     if (data) {
       return (
-        <p>
+        <div className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
           Success! You may now head{' '}
           <Link to="/">back to the homepage.</Link>
-        </p>
+        </div>
       )
     }
   };
@@ -117,7 +117,7 @@ const Login = () => {
       <main>
         <div className='flex justify-center'>
           {renderForm()}
-          {error && <div className='w-50 flex justify-center bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3'>{error.message}</div>}
+          {error && <div className="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">{error.message}</div>}
         </div>
       </main>
     </>
