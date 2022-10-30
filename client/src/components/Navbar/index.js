@@ -9,7 +9,7 @@ const navigation = [
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Login', href: '/Login', current: false },
   { name: 'Signup', href: '/Signup', current: false },
-  { name: 'Donate', href: 'https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6', current: false },
+  { name: 'Donate', href: 'https://www.paypal.com/donate/?hosted_button_id=3LXX39ST38LVL&source=url', current: false },
 ]
 const navigationLoggedin = [
   { name: 'Home', href: '/', current: false },
@@ -18,7 +18,7 @@ const navigationLoggedin = [
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'View Applications', href: '/applications', current: false },
   { name: 'Logout', href: '/Login', current: false },
-  { name: 'Donate', href: 'https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6', current: false },
+  { name: 'Donate', href: 'https://www.paypal.com/donate/?hosted_button_id=3LXX39ST38LVL&source=url', current: false },
 ]
 
 function classNames(...classes) {
