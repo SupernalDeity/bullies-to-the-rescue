@@ -32,12 +32,22 @@ Live Link:
 
 
 ## Contributing
-### Heather , Vanessa Lane, Anita Ganti
+### Heather , Syd Wiegman, Jen Arnold, Ted Shishkovskiy and Anthony Perez
 
-https://priyaravi23.github.io/react-portfolio/
+https://github.com/hcruz77
 
-![Badge](https://img.shields.io/badge/Github-priyaravi23-4cbbb9) 
-![Profile Image](https://github.com/priyaravi23.png?size=50)
+![Badge](https://img.shields.io/badge/Github-hcruz77-4cbbb9) 
+![Profile Image](https://github.com/hcruz77.png?size=50)
+
+http://www.vlane.net
+
+![Badge](https://img.shields.io/badge/Github-vanessalane-4cbbb9) 
+![Profile Image](https://github.com/vanessalane.png?size=50)
+
+https://anitapeppercorn.github.io/react-portfolio/
+
+![Badge](https://img.shields.io/badge/Github-anitapeppercorn-4cbbb9) 
+![Profile Image](https://github.com/anitapeppercorn.png?size=50)
 
 http://www.vlane.net
 

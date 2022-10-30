@@ -115,9 +115,9 @@ const Login = () => {
         </div>
       </div>
       <main>
-        <div>
+        <div className='flex justify-center'>
           {renderForm()}
-          {error && <div>{error.message}</div>}
+          {error && <div className='w-50 flex justify-center bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3'>{error.message}</div>}
         </div>
       </main>
     </>
