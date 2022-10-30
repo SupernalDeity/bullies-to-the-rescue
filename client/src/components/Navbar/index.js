@@ -124,7 +124,7 @@ function Navbar() {
     </Disclosure>
     );
   }
-
+ 
   // If logged out show login controls
   return (
     <Disclosure as="nav" className="bg-gray-800">
