@@ -2,11 +2,9 @@
 
 ## Table of Content
 * [Description](#description)
-* [Instructions](#instructions)
 * [Visuals](#visuals)
 * [Links](#links)
 * [Technology](#technology)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [Support](#support)
 * [License](#license)
@@ -14,11 +12,9 @@
 ## Description
 Animals are always looking for their forever home! We would like to make a website for an adoption company called Bullies to the Rescue. This website will take in applications, show dogs that are available for adoption and take in donations to the non profit organization.
 
-## Instructions
-
 
 ## Visuals
-![bullies-to-the-rescue]()
+![bullies-to-the-rescue](./client/src/assets/bullies-2-the-rescue.png)
 
 ## Links
 GitHub: https://github.com/SupernalDeity/bullies-to-the-rescue
@@ -26,38 +22,26 @@ GitHub: https://github.com/SupernalDeity/bullies-to-the-rescue
 Live Link: 
 
 ## Technology
-
-
-## Roadmap
+JavaScript
+HTML
+React.js
+Apollo
+MongoDB/Mongoose
+Node.js
+Express.js
+Tailwind CSS
+Git and GitHub
 
 
 ## Contributing
 ### Heather , Syd Wiegman, Jen Arnold, Ted Shishkovskiy and Anthony Perez
 
-https://github.com/hcruz77
-
 ![Badge](https://img.shields.io/badge/Github-hcruz77-4cbbb9) 
-![Profile Image](https://github.com/hcruz77.png?size=50)
+![Badge](https://img.shields.io/badge/Github-Sydwig-4cbbb9) 
+![Badge](https://img.shields.io/badge/Github-Cannaestia-4cbbb9) 
+![Badge](https://img.shields.io/badge/Github-TheodoreShishkovskiy-4cbbb9) 
+![Badge](https://img.shields.io/badge/Github-SupernalDeity-4cbbb9) 
 
-http://www.vlane.net
-
-![Badge](https://img.shields.io/badge/Github-vanessalane-4cbbb9) 
-![Profile Image](https://github.com/vanessalane.png?size=50)
-
-https://anitapeppercorn.github.io/react-portfolio/
-
-![Badge](https://img.shields.io/badge/Github-anitapeppercorn-4cbbb9) 
-![Profile Image](https://github.com/anitapeppercorn.png?size=50)
-
-http://www.vlane.net
-
-![Badge](https://img.shields.io/badge/Github-vanessalane-4cbbb9) 
-![Profile Image](https://github.com/vanessalane.png?size=50)
-
-https://anitapeppercorn.github.io/react-portfolio/
-
-![Badge](https://img.shields.io/badge/Github-anitapeppercorn-4cbbb9) 
-![Profile Image](https://github.com/anitapeppercorn.png?size=50)
 
 
 ## Suppport
