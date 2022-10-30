@@ -9,6 +9,7 @@ const navigation = [
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'Login', href: '/Login', current: false },
   { name: 'Signup', href: '/Signup', current: false },
+  { name: 'Donate', href: 'https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6', current: false },
 ]
 const navigationLoggedin = [
   { name: 'Home', href: '/', current: false },
@@ -17,6 +18,7 @@ const navigationLoggedin = [
   { name: 'Contact Us', href: '/Contact', current: false },
   { name: 'View Applications', href: '/applications', current: false },
   { name: 'Logout', href: '/Login', current: false },
+  { name: 'Donate', href: 'https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6', current: false },
 ]
 
 function classNames(...classes) {
@@ -37,7 +39,7 @@ function Navbar() {
     return (<Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className='flex justify-center'>
+          <div className='lg:flex lg:justify-center'>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -96,17 +98,7 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="sm:mt-4 sm:flex sm:justify-end mb-5 mr-5 lg:justify-end">
-              <div className="rounded-md shadow">
-                <a
-                  href='https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6'
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 text-base font-medium text-white hover:bg-indigo-700 md:py-1 md:px-3 md:text-lg"
-                >
-                  Donate
-                </a>
-              </div>
-            </div>
-
+            
             <Disclosure.Panel className={"sm:hidden"}>
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) =>
@@ -137,7 +129,7 @@ function Navbar() {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className='flex justify-center'>
+          <div className='lg:flex lg:justify-center'>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -184,18 +176,7 @@ function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="sm:mt-4 sm:flex sm:justify-end mb-5 mr-5 lg:justify-end">
-              <div className="rounded-md shadow">
-                <a
-                  href='https://www.paypal.com/donate?token=a14HNPdn-qRxoxNo8JNFp2AEa2aaYo4isgA9IG9n8BjP3HgBA-js7LFDGWhAzgfGklY23Oiy2zVIfSY6'
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 text-base font-medium text-white hover:bg-indigo-700 md:py-1 md:px-3 md:text-lg"
-                >
-                  Donate
-                </a>
-              </div>
-            </div>
-
-
+           
             <Disclosure.Panel className="sm:hidden">
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => {
