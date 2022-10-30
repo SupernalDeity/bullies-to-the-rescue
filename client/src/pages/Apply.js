@@ -734,15 +734,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="earinfection"
+                              name="earinfection"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="earinfection"
                               className="font-medium text-gray-700"
                             >
                               Ear Infections
@@ -753,15 +753,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="entropion"
+                              name="entropion"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="entropion"
                               className="font-medium text-gray-700"
                             >
                               Entropion
@@ -772,15 +772,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="gastritis"
+                              name="gastritis"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="gastritis"
                               className="font-medium text-gray-700"
                             >
                               Gastritis
@@ -791,15 +791,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="murmurs"
+                              name="murmurs"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="murmurs"
                               className="font-medium text-gray-700"
                             >
                               Heart Murmurs
@@ -810,15 +810,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="heartworm"
+                              name="heartworm"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="heartworm"
                               className="font-medium text-gray-700"
                             >
                               Heart Worms
@@ -829,15 +829,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="stroke"
+                              name="stroke"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="stroke"
                               className="font-medium text-gray-700"
                             >
                               Heat Stroke/ Stress
@@ -848,15 +848,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hemivert"
+                              name="hemivert"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hemivert"
                               className="font-medium text-gray-700"
                             >
                               Hemivertebrae
@@ -867,15 +867,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hoodvulva"
+                              name="hoodvulva"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hoodvulva"
                               className="font-medium text-gray-700"
                             >
                               Hooded Vulva
@@ -886,15 +886,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hotspot"
+                              name="hotspot"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hotspot"
                               className="font-medium text-gray-700"
                             >
                               Hot Spots
@@ -905,15 +905,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hydrocephalus"
+                              name="hydrocephalus"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hydrocephalus"
                               className="font-medium text-gray-700"
                             >
                               Hydrocephalus
@@ -924,15 +924,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hypoplastic"
+                              name="hypoplastic"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hypoplastic"
                               className="font-medium text-gray-700"
                             >
                               Hypoplastic Trachea
@@ -943,15 +943,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="tailpocket"
+                              name="tailpocket"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="tailpocket"
                               className="font-medium text-gray-700"
                             >
                               Infected Tail Pocket
@@ -962,15 +962,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="cysts"
+                              name="cysts"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="cysts"
                               className="font-medium text-gray-700"
                             >
                               Interdigital Cysts
@@ -981,15 +981,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="ivdd"
+                              name="ivdd"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="ivdd"
                               className="font-medium text-gray-700"
                             >
                               Intervertebral disc disease (IVDD)
@@ -1000,15 +1000,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="intestinalblock"
+                              name="intestinalblock"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="intestinalblock"
                               className="font-medium text-gray-700"
                             >
                               Intestinal Blockage
@@ -1019,15 +1019,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="intestinalworm"
+                              name="intestinalworm"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="intestinalworm"
                               className="font-medium text-gray-700"
                             >
                               Intestinal Worms
@@ -1038,15 +1038,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="ibs"
+                              name="ibs"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="ibs"
                               className="font-medium text-gray-700"
                             >
                               Irratable Bowel Syndrome
@@ -1057,15 +1057,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="luxpatella"
+                              name="luxpatella"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="luxpatella"
                               className="font-medium text-gray-700"
                             >
                               Luxating Patella
@@ -1076,15 +1076,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="mamtumor"
+                              name="mamtumor"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="mamtumor"
                               className="font-medium text-gray-700"
                             >
                               Mammary Tumors
@@ -1095,15 +1095,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="megacolon"
+                              name="megacolon"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="megacolon"
                               className="font-medium text-gray-700"
                             >
                               Mega Colon
@@ -1114,15 +1114,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="megaesophagus"
+                              name="megaesophagus"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="megaesophagus"
                               className="font-medium text-gray-700"
                             >
                               Mega Esophagus
@@ -1133,15 +1133,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="palatesurgery"
+                              name="palatesurgery"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="palatesurgery"
                               className="font-medium text-gray-700"
                             >
                               Palate Surgery
@@ -1152,15 +1152,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="pemphigus"
+                              name="pemphigus"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="pemphigus"
                               className="font-medium text-gray-700"
                             >
                               Pemphigus
@@ -1171,15 +1171,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="prolapsedanus"
+                              name="prolapsedanus"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="prolapsedanus"
                               className="font-medium text-gray-700"
                             >
                               Prolapsed Anus
@@ -1190,15 +1190,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="prolapsedurethra"
+                              name="prolapsedurethra"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="prolapsedurethra"
                               className="font-medium text-gray-700"
                             >
                               Polapsed Urethra
@@ -1209,15 +1209,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="pulmsteno"
+                              name="pulmsteno"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="pulmsteno"
                               className="font-medium text-gray-700"
                             >
                               Pulmonary Stenosis
@@ -1228,15 +1228,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="pyometra"
+                              name="pyometra"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="pyometra"
                               className="font-medium text-gray-700"
                             >
                               Pyometra
@@ -1247,15 +1247,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="regurgitation"
+                              name="regurgitation"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="regurgitation"
                               className="font-medium text-gray-700"
                             >
                               Regurgitation
@@ -1266,15 +1266,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="ringworm"
+                              name="ringworm"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="ringworm"
                               className="font-medium text-gray-700"
                             >
                               Ringworm
@@ -1285,15 +1285,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="seizures"
+                              name="seizures"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="seizures"
                               className="font-medium text-gray-700"
                             >
                               Seizures
@@ -1304,15 +1304,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="spinab"
+                              name="spinab"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="spinab"
                               className="font-medium text-gray-700"
                             >
                               Spina Bifida
@@ -1323,15 +1323,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="stenoticnares"
+                              name="stenoticnares"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="stenoticnares"
                               className="font-medium text-gray-700"
                             >
                               Stenotic Nares
@@ -1342,15 +1342,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="swimmers"
+                              name="swimmers"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="swimmers"
                               className="font-medium text-gray-700"
                             >
                               Swimmer's Syndrome
@@ -1361,15 +1361,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="notail"
+                              name="notail"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="notail"
                               className="font-medium text-gray-700"
                             >
                               Tail Amputation
@@ -1380,15 +1380,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="tearstain"
+                              name="tearstain"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="tearstain"
                               className="font-medium text-gray-700"
                             >
                               Tear Stains
@@ -1399,15 +1399,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="tripod"
+                              name="tripod"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="tripod"
                               className="font-medium text-gray-700"
                             >
                               Tripod (Missing Limb)
@@ -1418,15 +1418,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="urinaryincontinence"
+                              name="urinaryincontinence"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="urinaryincontinence"
                               className="font-medium text-gray-700"
                             >
                               Urinary Incontinence
@@ -1437,38 +1437,42 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="uti"
+                              name="uti"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="uti"
                               className="font-medium text-gray-700"
                             >
                               Urinary Tract Infections
                             </label>
                           </div>
                         </div>
+
+                        <div className="flex items-start">
+                          <div className="flex h-5 items-center">
+                            <input
+                              id="absolutenothing"
+                              name="absoluenothing"
+                              type="checkbox"
+                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            />
+                          </div>
+                          <div className="ml-3 text-sm">
+                            <label
+                              htmlFor="absolutenothing"
+                              className="font-medium text-gray-700"
+                            >
+                              None of the above
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </fieldset>
-
-                    <div className="col-span-6 sm:col-span-4">
-                      <label
-                        htmlFor="employerphone"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Other medical issues not listed above?
-                      </label>
-                      <input
-                        type="text"
-                        name="employerphone"
-                        id="employerphone"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      />
-                    </div>
 
                     <fieldset className="col-span-6 sm:col-span-4">
                       <div
@@ -1483,15 +1487,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="boundaryreact"
+                              name="boundaryreact"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="boundaryreact"
                               className="font-medium text-gray-700"
                             >
                               Boundary reactivity (crate aggression, climbing or
@@ -1503,15 +1507,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="destructive"
+                              name="destructive"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="destructive"
                               className="font-medium text-gray-700"
                             >
                               Destructive behaviors (chewing shoes, doors,
@@ -1523,15 +1527,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="dislikegender"
+                              name="dislikegender"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="dislikegender"
                               className="font-medium text-gray-700"
                             >
                               Dislike of men or women in general
@@ -1542,15 +1546,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="doordash"
+                              name="doordash"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="doordash"
                               className="font-medium text-gray-700"
                             >
                               Door dashing
@@ -1561,15 +1565,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="scarycar"
+                              name="scarycar"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="scarycar"
                               className="font-medium text-gray-700"
                             >
                               Fearful of car rides/ car sickness
@@ -1580,15 +1584,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="scaryvet"
+                              name="scaryvet"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="scaryvet"
                               className="font-medium text-gray-700"
                             >
                               Feaful of vet
@@ -1599,15 +1603,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="foodaggression"
+                              name="foodaggression"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="foodaggression"
                               className="font-medium text-gray-700"
                             >
                               Food aggression
@@ -1618,15 +1622,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="preydrive"
+                              name="preydrive"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="preydrive"
                               className="font-medium text-gray-700"
                             >
                               High prey drive
@@ -1637,15 +1641,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="humper"
+                              name="humper"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="humper"
                               className="font-medium text-gray-700"
                             >
                               Humping
@@ -1656,15 +1660,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="nocleaning"
+                              name="nocleaning"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="nocleaning"
                               className="font-medium text-gray-700"
                             >
                               Intolerance of grooming/ ear cleaning/ eye drops
@@ -1675,15 +1679,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hatekids"
+                              name="hatekids"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hatekids"
                               className="font-medium text-gray-700"
                             >
                               Intolerance of kids
@@ -1694,15 +1698,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="hatedogs"
+                              name="hatedogs"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="hatedogs"
                               className="font-medium text-gray-700"
                             >
                               Intolerance of other dogs (either selective or
@@ -1714,15 +1718,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="leashaggression"
+                              name="leashaggression"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="leashaggression"
                               className="font-medium text-gray-700"
                             >
                               Leash aggression
@@ -1733,15 +1737,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="myterritory"
+                              name="myterritory"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="myterritory"
                               className="font-medium text-gray-700"
                             >
                               Marking territory
@@ -1752,15 +1756,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="playbite"
+                              name="playbite"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="playbite"
                               className="font-medium text-gray-700"
                             >
                               Play biting/ mouthing
@@ -1771,15 +1775,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="eatpoop"
+                              name="eatpoop"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="eatpoop"
                               className="font-medium text-gray-700"
                             >
                               Poop eating
@@ -1790,15 +1794,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="strangerdanger"
+                              name="strangerdanger"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="strangerdanger"
                               className="font-medium text-gray-700"
                             >
                               Reaction to strangers/ people entering the home
@@ -1809,15 +1813,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="resourceguard"
+                              name="resourceguard"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="resourceguard"
                               className="font-medium text-gray-700"
                             >
                               Resource guarding
@@ -1828,15 +1832,15 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="seperationanxiety"
+                              name="seperationanxiety"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="seperationanxiety"
                               className="font-medium text-gray-700"
                             >
                               Seperation Anxiety
@@ -1847,18 +1851,36 @@ const Apply = () => {
                         <div className="flex items-start">
                           <div className="flex h-5 items-center">
                             <input
-                              id="offers"
-                              name="offers"
+                              id="mytoys"
+                              name="mytoys"
                               type="checkbox"
                               className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                             />
                           </div>
                           <div className="ml-3 text-sm">
                             <label
-                              htmlFor="offers"
+                              htmlFor="mytoys"
                               className="font-medium text-gray-700"
                             >
                               Toy possession/ aggression
+                            </label>
+                          </div>
+                        </div>
+                        <div className="flex items-start">
+                          <div className="flex h-5 items-center">
+                            <input
+                              id="noprobs"
+                              name="noprobs"
+                              type="checkbox"
+                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                            />
+                          </div>
+                          <div className="ml-3 text-sm">
+                            <label
+                              htmlFor="noprobs"
+                              className="font-medium text-gray-700"
+                            >
+                              None of the above
                             </label>
                           </div>
                         </div>
@@ -1867,52 +1889,52 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="dwellinginfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Dwelling Information (rent, own, etc.)
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="dwellinginfo"
+                        id="dwellinginfo"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="landlordinfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Landlord's Name and Number
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="landlordinfo"
+                        id="landlordinfo"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="fencedyard"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do you have a fenced yard? If so, please describe.
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="fencedyard"
+                        id="fencedyard"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="stairinfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does your home have stairs the bulldog would have to
@@ -1920,15 +1942,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="stairinfo"
+                        id="stairinfo"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="waterfeature"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do you have a pool, water feature, pond, lake or any
@@ -1938,90 +1960,90 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="waterfeature"
+                        id="waterfeature"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="homeac"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your home air-conditioned?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="homeac"
+                        id="homeac"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="wherethdogday"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Where would your bulldog be kept during the day?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="wherethdogday"
+                        id="wherethdogday"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="wherethdognight"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Where would your bulldog be kept at night?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="wherethdognight"
+                        id="wherethdognight"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="carac"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your car air-conditioned?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="carac"
+                        id="carac"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="homeallergy"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is anyone in your home allergic to dogs?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="homeallergy"
+                        id="homeallergy"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="allinfavor"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All family members in favor of adopting? (emotionally
@@ -2031,91 +2053,91 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="allinfavor"
+                        id="allinfavor"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="whyudothis"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Why do you wish to rescue?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="whyudothis"
+                        id="whyudothis"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="goodwchild"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does the dog have to be good with children?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="goodwchild"
+                        id="goodwchild"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="childvisit"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do childen visit you home? Ages and how often?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="childvisit"
+                        id="childvisit"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="childsupervise"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Are you willing to supervise the bulldog with children?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="childsupervise"
+                        id="childsupervise"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="adoptage"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        What age are you willing to adopt? If unsure, provide a
+                        What age are you willing to adopt? Provide a
                         range.
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="adoptage"
+                        id="adoptage"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="currentpets"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do you have any pets currently? If yes, please list all
@@ -2125,15 +2147,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="currentpets"
+                        id="currentpets"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="extramedical"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Are you willing to take a bulldog with extra medical
@@ -2142,30 +2164,30 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="extramedical"
+                        id="extramedical"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="howsoon"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How soon are you ready to adopt?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="howsoon"
+                        id="howsoon"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="surrenderpet"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Has your family ever surrendered a pet to a rescue
@@ -2173,15 +2195,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="surrenderpet"
+                        id="surrenderpet"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="surrenderinfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         If your family has adopted a rescue animal before,
@@ -2190,15 +2212,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="surrenderinfo"
+                        id="surrenderinfo"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="petharmony"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do all of your family pets get along with each other? If
@@ -2206,15 +2228,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="petharmony"
+                        id="petharmony"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="petbites"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Has your family ever owned a pet that has bitten
@@ -2222,15 +2244,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="petbites"
+                        id="petbites"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="heartwormprevention"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What heartworm preventative does your family use? Please
@@ -2238,15 +2260,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="heartwormprevention"
+                        id="heartwormprevention"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="regularvetcare"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do all of your family's pets receive regular veterinary
@@ -2254,15 +2276,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="regularvetcare"
+                        id="regularvetcare"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="vetinfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Vet's Office, Vet Name, Address and Phone Number (please
@@ -2271,15 +2293,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="vetinfo"
+                        id="vetinfo"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="references"
                         className="block text-sm font-medium text-gray-700"
                       >
                         References: List names and phone numbers of two people
@@ -2289,15 +2311,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="references"
+                        id="references"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="aggressiondef"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What type of behavior in a Bulldog would make your
@@ -2306,15 +2328,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="aggressiondef"
+                        id="aggressiondef"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="behaviorcorrection"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How would your family correct behavior problems that may
@@ -2322,15 +2344,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="behaviorcorrection"
+                        id="behaviorcorrection"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="cratescages"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What does your family feel is the proper use of crates
@@ -2338,31 +2360,31 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="cratescages"
+                        id="cratescages"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="trainingissues"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does your family understand that rescued Bulldogs may
-                        have house-training issues, especially at first?
+                        have house-training issues, especially at first? If not, 
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="trainingissues"
+                        id="trainingissues"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="commonissues"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your family familiar with common bulldog health
@@ -2371,8 +2393,8 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="commonissues"
+                        id="commonissues"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2582,7 +2604,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="spayneuter"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All Bulldogs adopted from Bullies 2 the Rescue will be
@@ -2592,8 +2614,8 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="spayneuter"
+                        id="spayneuter"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2640,7 +2662,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="hearsay"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How did you hear about Bullies 2 the Rescue? (ex:
@@ -2649,15 +2671,15 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="hearsay"
+                        id="hearsay"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="otheradoption"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Have you applied to purchase from a breeder or adopt
@@ -2666,8 +2688,8 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="otheradoption"
+                        id="otheradoption"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2944,30 +2966,30 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="commentsquestionsconcerns"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Comments, Questions, or Concerns?
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="commentsquestionsconcerns"
+                        id="commentsquestionsconcerns"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="employerphone"
+                        htmlFor="datetime"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Date and time:
                       </label>
                       <input
                         type="text"
-                        name="employerphone"
-                        id="employerphone"
+                        name="datetime"
+                        id="datetime"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
