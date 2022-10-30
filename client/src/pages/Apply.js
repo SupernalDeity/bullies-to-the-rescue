@@ -1,9 +1,125 @@
 // Node Modules
-import React from "react";
+import React, { useState } from 'react';
 import { useMutation } from "@apollo/client";
 import { ADD_APPLICATION } from "../utils/mutations";
 
 const Apply = () => {
+  const [applyState, setApplyState] = useState({
+    name: "",
+    age: "",
+    coapplicant: "",
+    coapplicantage: "",
+    address: "",
+    addresstwo: "",
+    email: "",
+    phone: "",
+    phonetype: "",
+    housemembers: "",
+    occupation: "",
+    employerinfo: "",
+    employerphone: "",
+    coappoccupation: "",
+    coappemployerinfo: "",
+    ownbulldog: "",
+    medicalissues: "",
+    otherissues: "",
+    dogbehaviorissues: "",
+    dwellinginfo: "",
+    landlordinfo: {
+      name: "",
+      number: "",
+    },
+    fencedyard: "",
+    stairs: "",
+    water: "",
+    airconditioning: {
+      home: "",
+      car: "",
+    },
+    wheredog: {
+      day: "",
+      night: "",
+    },
+    allergy: "",
+    family: {
+      willingness: "",
+      why: "",
+      children: "",
+      childreninfo: "",
+      childrensupervise: "",
+    },
+    dogage: "",
+    currentpets: "",
+    medicalneeds: "",
+    adoptwhen: "",
+    surrenderpet: "",
+    adoptedanimal: "",
+    animalfriends: "",
+    bite: "",
+    heartworm: "",
+    vetcare: "",
+    vetinfo: "",
+    references: "",
+    behavior: "",
+    correction: "",
+    crates: "",
+    trainingissues: "",
+    commonhealthissues: "",
+    questionare: {
+      heat: "",
+      food: "",
+      palate: "",
+      allergy: "",
+      spayneuter: "",
+      proccessing: "",
+      hearabout: "",
+      previouspurchase: "",
+      travel: "",
+      appfee: "",
+      appvalid: "",
+      commitment: "",
+      donate: "",
+      accuracy: "",
+      comments: "",
+      date: "",
+    },
+  });
+  const [addApplication, { error, data }] = useMutation(ADD_APPLICATION);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setApplyState({
+      ...applyState,
+      [name]: value,
+    });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const { data } = await addApplication({
+        variables: { ...applyState },
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const renderForm = () => {
+    // if (data) {
+    //   return (
+    //     // <div
+    //     //   className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3"
+    //     //   role="alert"
+    //     // >
+    //     //   Success! You may now head <Link to="/">back to the homepage.</Link>
+    //     // </div>
+    //   // );
+    // }
+  };
+
   return (
     <>
       <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
@@ -36,15 +152,17 @@ const Apply = () => {
                   <div className="grid gap-6">
                     <div className="col-span-8 sm:col-span-4">
                       <label
-                        htmlFor="full-name"
+                        htmlFor="name"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Full name:
                       </label>
                       <input
                         type="text"
-                        name="full-name"
-                        id="full-name"
+                        name="name"
+                        id="name"
+                        value={applyState.name}
+                        onChange={handleChange}
                         autoComplete="given-name"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -61,21 +179,25 @@ const Apply = () => {
                         type="text"
                         name="age"
                         id="age"
+                        value={applyState.age}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coapp-name"
+                        htmlFor="coapplicant"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Co-Applicant Full Name:
                       </label>
                       <input
                         type="text"
-                        name="coapp-name"
-                        id="coapp-name"
+                        name="coapplicant"
+                        id="coapplicant"
+                        value={applyState.coapplicant}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
