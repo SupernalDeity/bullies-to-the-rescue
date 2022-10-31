@@ -121,7 +121,7 @@ const Apply = () => {
   };
 
   return (
-    <>
+    <form onSubmit={handleFormSubmit}>
       <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
         <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
           <div className="md:col-span-1">
@@ -204,15 +204,17 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coapp-age"
+                        htmlFor="coapplicantage"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Co-Applicant Age:
                       </label>
                       <input
                         type="text"
-                        name="coapp-age"
-                        id="coapp-age"
+                        name="coapplicantage"
+                        id="coapplicantage"
+                        value={applyState.coapplicantage}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -228,21 +230,25 @@ const Apply = () => {
                         type="text"
                         name="address"
                         id="address"
+                        value={applyState.address}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="address2"
+                        htmlFor="addresstwo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Address (city, state, zip):
                       </label>
                       <input
                         type="text"
-                        name="address2"
-                        id="address2"
+                        name="addresstwo"
+                        id="addresstwo"
+                        value={applyState.addresstwo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -258,6 +264,8 @@ const Apply = () => {
                         type="text"
                         name="email"
                         id="email"
+                        value={applyState.email}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -273,20 +281,24 @@ const Apply = () => {
                         type="text"
                         name="phone"
                         id="phone"
+                        value={applyState.phone}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="phone2"
+                        htmlFor="phonetype"
                         className="block text-sm font-medium text-gray-700"
                       >
                         The phone number is:
                       </label>
                       <select
-                        id="phone2"
-                        name="phone2"
+                        id="phonetype"
+                        name="phonetype"
+                        value={applyState.phonetype}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
                       >
                         <option>Cell</option>
@@ -296,7 +308,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="household"
+                        htmlFor="housemembers"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Please list all household members other than the
@@ -310,8 +322,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="household"
-                        id="household"
+                        name="housemembers"
+                        id="housemembers"
+                        value={applyState.housemembers}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -327,6 +341,8 @@ const Apply = () => {
                         type="text"
                         name="occupation"
                         id="occupation"
+                        value={applyState.oc}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -342,6 +358,8 @@ const Apply = () => {
                         type="text"
                         name="employerinfo"
                         id="employerinfo"
+                        value={applyState.employerinfo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -357,36 +375,42 @@ const Apply = () => {
                         type="text"
                         name="employerphone"
                         id="employerphone"
+                        value={applyState.employerphone}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coapp-employerinfo"
+                        htmlFor="coappoccupation"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Co-Applicant's Occupation:
                       </label>
                       <input
                         type="text"
-                        name="coapp-employerinfo"
-                        id="coapp-employerinfo"
+                        name="coappoccupation"
+                        id="coappoccupation"
+                        value={applyState.coappoccupation}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coapp-employerinfo"
+                        htmlFor="coappemployerinfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Co-Applicant's Employer & Address:
                       </label>
                       <input
                         type="text"
-                        name="coapp-employerinfo"
-                        id="coapp-employerinfo"
+                        name="coappemployerinfo"
+                        id="coappemployerinfo"
+                        value={applyState.coappemployerinfo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -399,12 +423,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nodog"
-                            name="nodog"
+                            name="ownbulldog"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             type="checkbox"
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nodog"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, we have never had a bulldog
@@ -413,12 +439,14 @@ const Apply = () => {
                         <div className="flex item s-center">
                           <input
                             id="english"
-                            name="english"
+                            name="ownbulldog"
                             type="checkbox"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="english"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             English
@@ -427,12 +455,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="french"
-                            name="french"
+                            name="ownbulldog"
                             type="checkbox"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="french"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             French
@@ -441,12 +471,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="olde-english"
-                            name="olde-english"
+                            name="ownbulldog"
                             type="checkbox"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="olde-english"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Olde English
@@ -455,12 +487,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="american"
-                            name="american"
+                            name="ownbulldog"
                             type="checkbox"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="american"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             American
@@ -469,12 +503,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="mix"
-                            name="mix"
+                            name="ownbulldog"
                             type="checkbox"
+                            value={applyState.ownbulldog}
+                            onChange={handleChange}
                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="mix"
+                            htmlFor="ownbulldog"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Mix
@@ -2020,13 +2056,15 @@ const Apply = () => {
                         type="text"
                         name="dwellinginfo"
                         id="dwellinginfo"
+                        value={applyState.dwellinginfo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="landlordinfo"
+                        htmlFor="landlordinfoname"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Landlord's Name and Number
@@ -2034,7 +2072,9 @@ const Apply = () => {
                       <input
                         type="text"
                         name="landlordinfo"
-                        id="landlordinfo"
+                        id="landlordinfoname"
+                        value={applyState.landlordinfo.name}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2050,13 +2090,15 @@ const Apply = () => {
                         type="text"
                         name="fencedyard"
                         id="fencedyard"
+                        value={applyState.fencedyard}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="stairinfo"
+                        htmlFor="stairs"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does your home have stairs the bulldog would have to
@@ -2064,15 +2106,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="stairinfo"
-                        id="stairinfo"
+                        name="stairs"
+                        id="stairs"
+                        value={applyState.stairs}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="waterfeature"
+                        htmlFor="water"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do you have a pool, water feature, pond, lake or any
@@ -2082,90 +2126,102 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="waterfeature"
-                        id="waterfeature"
+                        name="water"
+                        id="water"
+                        value={applyState.water}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="homeac"
+                        htmlFor="airconditioninghome"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your home air-conditioned?
                       </label>
                       <input
                         type="text"
-                        name="homeac"
-                        id="homeac"
+                        name="airconditioning"
+                        id="airconditioninghome"
+                        value={applyState.airconditioning.home}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="wherethdogday"
+                        htmlFor="wheredogday"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Where would your bulldog be kept during the day?
                       </label>
                       <input
                         type="text"
-                        name="wherethdogday"
-                        id="wherethdogday"
+                        name="wheredog"
+                        id="wheredogday"
+                        value={applyState.wheredog.day}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="wherethdognight"
+                        htmlFor="wheredognight"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Where would your bulldog be kept at night?
                       </label>
                       <input
                         type="text"
-                        name="wherethdognight"
-                        id="wherethdognight"
+                        name="wheredog"
+                        id="wheredognight"
+                        value={applyState.wheredog.night}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="carac"
+                        htmlFor="airconditioningcar"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your car air-conditioned?
                       </label>
                       <input
                         type="text"
-                        name="carac"
-                        id="carac"
+                        name="airconditioning"
+                        id="airconditioningcar"
+                        value={applyState.airconditioning.car}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="homeallergy"
+                        htmlFor="allergy"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is anyone in your home allergic to dogs?
                       </label>
                       <input
                         type="text"
-                        name="homeallergy"
-                        id="homeallergy"
+                        name="allergy"
+                        id="allergy"
+                        value={applyState.allergy}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="allinfavor"
+                        htmlFor="willingness"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All family members in favor of adopting? (emotionally
@@ -2175,8 +2231,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="allinfavor"
-                        id="allinfavor"
+                        name="willingness"
+                        id="willingness"
+                        value={applyState.family.willingness}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2243,7 +2301,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="adoptage"
+                        htmlFor="dogage"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What age are you willing to adopt? Provide a
@@ -2251,8 +2309,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="adoptage"
-                        id="adoptage"
+                        name="dogage"
+                        id="dogage"
+                        value={applyState.dogage}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2271,13 +2331,15 @@ const Apply = () => {
                         type="text"
                         name="currentpets"
                         id="currentpets"
+                        value={applyState.currentpets}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="extramedical"
+                        htmlFor="medicalneeds"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Are you willing to take a bulldog with extra medical
@@ -2286,23 +2348,27 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="extramedical"
-                        id="extramedical"
+                        name="medicalneeds"
+                        id="medicalneeds" 
+                        value={applyState.medicalneeds}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="howsoon"
+                        htmlFor="adoptwhen"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How soon are you ready to adopt?
                       </label>
                       <input
                         type="text"
-                        name="howsoon"
-                        id="howsoon"
+                        name="adoptwhen"
+                        id="adoptwhen"
+                        value={applyState.adoptwhen}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2319,13 +2385,15 @@ const Apply = () => {
                         type="text"
                         name="surrenderpet"
                         id="surrenderpet"
+                        value={applyState.surrenderpet}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="surrenderinfo"
+                        htmlFor="adoptedanimal"
                         className="block text-sm font-medium text-gray-700"
                       >
                         If your family has adopted a rescue animal before,
@@ -2334,15 +2402,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="surrenderinfo"
-                        id="surrenderinfo"
+                        name="adoptedanimal"
+                        id="adoptedanimal"
+                        value={applyState.adoptedanimal}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="petharmony"
+                        htmlFor="animalfriends"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do all of your family pets get along with each other? If
@@ -2350,15 +2420,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="petharmony"
-                        id="petharmony"
+                        name="animalfriends"
+                        id="animalfriends"
+                        value={applyState.animalfriends}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="petbites"
+                        htmlFor="bite"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Has your family ever owned a pet that has bitten
@@ -2366,15 +2438,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="petbites"
-                        id="petbites"
+                        name="bite"
+                        id="bite"
+                        value={applyState.bite}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="heartwormprevention"
+                        htmlFor="heartworm"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What heartworm preventative does your family use? Please
@@ -2382,15 +2456,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="heartwormprevention"
-                        id="heartwormprevention"
+                        name="heartworm"
+                        id="heartworm"
+                        value={applyState.heartworm}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="regularvetcare"
+                        htmlFor="vetcare"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do all of your family's pets receive regular veterinary
@@ -2398,8 +2474,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="regularvetcare"
-                        id="regularvetcare"
+                        name="vetcare"
+                        id="vetcare"
+                        value={applyState.vetcare}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2417,6 +2495,8 @@ const Apply = () => {
                         type="text"
                         name="vetinfo"
                         id="vetinfo"
+                        value={applyState.vetinfo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2435,13 +2515,15 @@ const Apply = () => {
                         type="text"
                         name="references"
                         id="references"
+                        value={applyState.references}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="aggressiondef"
+                        htmlFor="behavior"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What type of behavior in a Bulldog would make your
@@ -2450,15 +2532,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="aggressiondef"
-                        id="aggressiondef"
+                        name="behavior"
+                        id="behavior"
+                        value={applyState.behavior}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="behaviorcorrection"
+                        htmlFor="correction"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How would your family correct behavior problems that may
@@ -2466,15 +2550,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="behaviorcorrection"
-                        id="behaviorcorrection"
+                        name="correction"
+                        id="correction"
+                        value={applyState.correction}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="cratescages"
+                        htmlFor="crates"
                         className="block text-sm font-medium text-gray-700"
                       >
                         What does your family feel is the proper use of crates
@@ -2482,8 +2568,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="cratescages"
-                        id="cratescages"
+                        name="crates"
+                        id="crates"
+                        value={applyState.crates}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2500,13 +2588,15 @@ const Apply = () => {
                         type="text"
                         name="trainingissues"
                         id="trainingissues"
+                        value={applyState.trainingissues}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="commonissues"
+                        htmlFor="commonhealthissues"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Is your family familiar with common bulldog health
@@ -2515,8 +2605,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="commonissues"
-                        id="commonissues"
+                        name="commonhealthissues"
+                        id="commonhealthissues"
+                        value={applyState.commonhealthissues}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2529,8 +2621,10 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesheat"
-                            name="dogheat"
+                            name="heat"
                             type="radio"
+                            value={applyState.questionare.heat}
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
@@ -2543,8 +2637,10 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noheat"
-                            name="dogheat"
+                            name="heat"
                             type="radio"
+                            value={applyState.questionare.heat}
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
@@ -2557,8 +2653,10 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkheat"
-                            name="dogheat"
+                            name="heat"
                             type="radio"
+                            value={applyState.questionare.heat}
+                            onSelect={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
@@ -2738,6 +2836,8 @@ const Apply = () => {
                         type="text"
                         name="spayneuter"
                         id="spayneuter"
+                        value={applyState.spayneuter}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -3130,7 +3230,7 @@ const Apply = () => {
           </div>
         </div>
       </div>
-    </>
+    </form>
   );
 };
 
