@@ -35,7 +35,7 @@ const Home = () => {
             preserveAspectRatio="none"
             aria-hidden="true"
           >
-            {/* <polygon points="50,0 100,0 50,100 0,100" /> */}
+            {/* <polygon points="50,0 90,0 50,100 0,100" /> */}
           </svg>
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">

@@ -90,7 +90,7 @@ function Contact() {
                           placeholder='Enter a Valid Email'
                           required
                         />
-                        <p class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
+                        <p className="mt-2 invisible peer-invalid:visible text-pink-600 text-sm">
                        Please provide a valid email address.
                       </p>
                       </div>
