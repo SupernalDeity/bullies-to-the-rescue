@@ -23,7 +23,6 @@ const navigationLoggedin = [
 
 function classNames(...classes) {
   let classList = classes.filter(Boolean).join(' ');
-  console.log(classList);
   return classList;
 }
 

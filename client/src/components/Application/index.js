@@ -11,7 +11,6 @@ const Application = ({ id, setShowOne }) => {
   if (loading) {
     return <div>Loading...</div>;
   }
-  console.log(data);
 
   return (
     <div>
