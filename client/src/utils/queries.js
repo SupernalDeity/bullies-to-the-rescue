@@ -61,7 +61,6 @@ export const APPLICATION = gql`
     ownbulldog
     medicalissues
     otherissues
-    dogbehaviorissues
     dwellinginfo
     landlordname
     landlordnumber
