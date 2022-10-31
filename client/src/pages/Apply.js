@@ -276,24 +276,45 @@ const Apply = () => {
                       />
                     </div>
 
-                    <div className="col-span-6 sm:col-span-4">
-                      <label
-                        htmlFor="phonetype"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        The phone number is:
-                      </label>
-                      <select
-                        id="phonetype"
-                        name="phonetype"
-                        value={applyState.phonetype}
-                        onChange={handleChange}
-                        className="mt-1 block w-full rounded-md border border-gray-300 bg-white py-2 px-3 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-                      >
-                        <option>Cell</option>
-                        <option>Landline</option>
-                      </select>
-                    </div>
+                    <fieldset className="col-span-6 sm:col-span-4">
+                      <legend className="contents text-base font-medium text-gray-700">
+                       What type of phone:
+                      </legend>
+                      <div className="mt-4 space-y-4">
+                        <div className="flex items-center">
+                          <input
+                            id="cellphone"
+                            name="phonetype"
+                            type="radio"
+                            value="cell phone"
+                            onChange={handleChange}
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="phonetype"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Cell
+                          </label>
+                        </div>
+                        <div className="flex items-center">
+                          <input
+                            id="landline"
+                            name="phonetype"
+                            type="radio"
+                            value="landline"
+                            onChange={handleChange}
+                            className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
+                          />
+                          <label
+                            htmlFor="phonetype"
+                            className="ml-3 block text-sm font-medium text-gray-700"
+                          >
+                            Landline
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
