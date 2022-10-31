@@ -23,7 +23,6 @@ const Apply = () => {
     ownbulldog: "",
     medicalissues: "",
     otherissues: "",
-    dogbehaviorissues: "",
     dwellinginfo: "",
     landlordname: "",
     landlordnumber: "",
@@ -98,16 +97,16 @@ const Apply = () => {
   };
 
   const renderForm = () => {
-    // if (data) {
-    //   return (
-    //     // <div
-    //     //   className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3"
-    //     //   role="alert"
-    //     // >
-    //     //   Success! You may now head <Link to="/">back to the homepage.</Link>
-    //     // </div>
-    //   // );
-    // }
+    if (data) {
+      return (
+        <div
+          className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3"
+          role="alert"
+        >
+          Success! Your application is submitted.
+        </div>
+      );
+    }
   };
 
   return (
@@ -785,7 +784,7 @@ const Apply = () => {
                       <input
                         type="text"
                         name="medicalneeds"
-                        id="medicalneeds" 
+                        id="medicalneeds"
                         value={applyState.medicalneeds}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -1018,7 +1017,7 @@ const Apply = () => {
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does your family understand that rescued Bulldogs may
-                        have house-training issues, especially at first? If not, 
+                        have house-training issues, especially at first? If not,
                       </label>
                       <input
                         type="text"
@@ -1723,6 +1722,10 @@ const Apply = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div className='flex justify-center'>
+        {renderForm()}
+        {error && <div className="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">Please make sure all questions are answered!</div>}
       </div>
     </>
   );

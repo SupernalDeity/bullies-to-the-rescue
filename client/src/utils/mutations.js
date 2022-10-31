@@ -77,7 +77,6 @@ export const ADD_APPLICATION = gql`
     ownbulldog
     medicalissues
     otherissues
-    dogbehaviorissues
     dwellinginfo
     landlordname
     landlordnumber

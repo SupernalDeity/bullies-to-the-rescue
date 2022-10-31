@@ -17,9 +17,9 @@ const typeDefs = gql`
   type Application {
     _id: ID
     name: String 
-    age: Int
+    age: String
     coapplicant: String
-    coapplicantage: Int
+    coapplicantage: String
     address: String 
     addresstwo: String
     email: String 
@@ -34,7 +34,6 @@ const typeDefs = gql`
     ownbulldog: String
     medicalissues: String
     otherissues: String 
-    dogbehaviorissues: String
     dwellinginfo: String
     landlordname: String
     landlordnumber: String
@@ -89,9 +88,9 @@ const typeDefs = gql`
   input _Application {
     _id: ID
     name: String 
-    age: Int
+    age: String
     coapplicant: String
-    coapplicantage: Int
+    coapplicantage: String
     address: String 
     addresstwo: String
     email: String 
@@ -106,7 +105,6 @@ const typeDefs = gql`
     ownbulldog: String
     medicalissues: String
     otherissues: String 
-    dogbehaviorissues: String
     dwellinginfo: String
     landlordname: String
     landlordnumber: String

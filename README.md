@@ -14,7 +14,7 @@ Animals are always looking for their forever home! We would like to make a websi
 
 
 ## Visuals
-![bullies-to-the-rescue](./client/src/assets/bullies-2-the-rescue.png)
+![bullies-to-the-rescue](./client/src/assets/doghomepage.png)
 
 ## Links
 GitHub: https://github.com/SupernalDeity/bullies-to-the-rescue

@@ -8,7 +8,7 @@ const appSchema = new Schema(
       trim: true,
     },
     age: {
-      type: Number,
+      type: String,
       required: true
     },
     coapplicant: {
@@ -17,7 +17,7 @@ const appSchema = new Schema(
       trim: true
     },
     coapplicantage: {
-      type: Number,
+      type: String,
       required: true,
     },
     address: {
@@ -78,10 +78,6 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    dogbehaviorissues: {
-      type: String,
-      required: true,
-    },
     dwellinginfo: {
       type: String,
       required: true,
@@ -90,7 +86,7 @@ const appSchema = new Schema(
         type: String,
         required: true,
     },
-    landlordnumber: {
+    landlordString: {
       type: String,
       required: true,
     },
