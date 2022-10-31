@@ -111,7 +111,7 @@ const Apply = () => {
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <>
       <div className="bg-[url('https://i.imgur.com/zFvu6QI.jpg')] bg-fixed">
         <div className="max-w-3xl mx-auto mt-10 sm:mt-0 bg-white">
           <div className="md:col-span-1">
@@ -136,7 +136,7 @@ const Apply = () => {
             </div>
           </div>
           <div className="mt-5 md:col-span-2 md:mt-0">
-            <form action="#" method="POST">
+            <form action="#" method="POST" onSubmit={handleFormSubmit}>
               <div className="overflow-hidden shadow sm:rounded-md">
                 <div className="bg-white px-4 py-5 sm:p-6">
                   <div className="grid gap-6">
@@ -407,15 +407,15 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coappemployerinfo"
+                        htmlFor="ownbulldog"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Have you ever owned a bulldog? If so, what type:
                       </label>
                       <input
                         type="text"
-                        name="coappemployerinfo"
-                        id="coappemployerinfo"
+                        name="ownbulldog"
+                        id="ownbulldog"
                         value={applyState.ownbulldog}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -424,15 +424,15 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coappemployerinfo"
+                        htmlFor="medicalissues"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Please list any medical issues you have direct experience with for any dog you have personally owned:
                       </label>
                       <input
                         type="text"
-                        name="coappemployerinfo"
-                        id="coappemployerinfo"
+                        name="medicalissues"
+                        id="medicalissues"
                         value={applyState.medicalissues}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -441,15 +441,15 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="coappemployerinfo"
+                        htmlFor="otherissues"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Please list any other issues you have direct experience with for any dog you have personally owned:
                       </label>
                       <input
                         type="text"
-                        name="coappemployerinfo"
-                        id="coappemployerinfo"
+                        name="otherissues"
+                        id="otherissues"
                         value={applyState.otherissues}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -1724,7 +1724,7 @@ const Apply = () => {
           </div>
         </div>
       </div>
-    </form>
+    </>
   );
 };
 
