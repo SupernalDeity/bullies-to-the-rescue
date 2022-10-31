@@ -36,14 +36,21 @@ const typeDefs = gql`
     otherissues: String 
     dogbehaviorissues: String
     dwellinginfo: String
-    landlordinfo: Landlord
+    landlordname: String
+    landlordnumber: String
     fencedyard: String
     stairs: String 
     water: String 
-    airconditioning: Airconditioning
-    wheredog: Wheredog
+    airconditioninghome: String
+    airconditioningcar: String
+    whereday: String 
+    wherenight: String
     allergy: String
-    family: Family
+    familywillingness: String
+    familywhy: String
+    familychildren: String 
+    familychildreninfo: String
+    familychildrensupervise: String
     dogage: String
     currentpets: String
     medicalneeds: String
@@ -61,7 +68,22 @@ const typeDefs = gql`
     crates: String 
     trainingissues: String 
     commonhealthissues: String 
-    questionare: Questionaire
+    questionaireheat: String
+    questionairefood: String
+    questionairepalate: String
+    questionaireallergy: String
+    questionairespayneuter: String 
+    questionaireproccessing: Boolean
+    questionairehearabout: String 
+    questionairepreviouspurchase: String 
+    questionairetravel: String 
+    questionaireappfee: String
+    questionaireappvalid: String
+    questionairecommitment: String
+    questionairedonate: Boolean
+    questionaireaccuracy: Boolean
+    questionairecomments: String 
+    questionairedate: String 
   }
 
   input _Application {
@@ -86,14 +108,21 @@ const typeDefs = gql`
     otherissues: String 
     dogbehaviorissues: String
     dwellinginfo: String
-    landlordinfo: _Landlord
+    landlordname: String
+    landlordnumber: String
     fencedyard: String
     stairs: String 
     water: String 
-    airconditioning: _Airconditioning
-    wheredog: _Wheredog
+    airconditioninghome: String
+    airconditioningcar: String
+    whereday: String 
+    wherenight: String
     allergy: String
-    family: _Family
+    familywillingness: String
+    familywhy: String
+    familychildren: String 
+    familychildreninfo: String
+    familychildrensupervise: String
     dogage: String
     currentpets: String
     medicalneeds: String
@@ -111,92 +140,23 @@ const typeDefs = gql`
     crates: String 
     trainingissues: String 
     commonhealthissues: String 
-    questionare: _Questionaire
+    questionaireheat: String
+    questionairefood: String
+    questionairepalate: String
+    questionaireallergy: String
+    questionairespayneuter: String 
+    questionaireproccessing: Boolean
+    questionairehearabout: String 
+    questionairepreviouspurchase: String 
+    questionairetravel: String 
+    questionaireappfee: String
+    questionaireappvalid: String
+    questionairecommitment: String
+    questionairedonate: Boolean
+    questionaireaccuracy: Boolean
+    questionairecomments: String 
+    questionairedate: String 
   }  
-
-  type Landlord {
-    name: String
-    number: String
-  }
-
-  input _Landlord {
-    name: String
-    number: String
-  }
-
-  type Airconditioning {
-    home: String
-    car: String
-  }
-
-  input _Airconditioning {
-    home: String
-    car: String
-  }
-
-  type Wheredog {
-    day: String 
-    night: String
-  }
-
-  input _Wheredog {
-    day: String 
-    night: String
-  }
-
-  type Family {
-    willingness: String
-    why: String
-    children: String 
-    childreninfo: String
-    childrensupervise: String
-  }
-
-  input _Family {
-    willingness: String
-    why: String
-    children: String 
-    childreninfo: String
-    childrensupervise: String
-  }
-
-  type Questionaire {
-    heat: String
-    food: String
-    palate: String
-    allergy: String
-    spayneuter: String 
-    proccessing: Boolean
-    hearabout: String 
-    previouspurchase: String 
-    travel: String 
-    appfee: String
-    appvalid: String
-    commitment: String
-    donate: Boolean
-    accuracy: Boolean
-    comments: String 
-    date: String 
-  }
-
-  input _Questionaire {
-    heat: String
-    food: String
-    palate: String
-    allergy: String
-    spayneuter: String 
-    proccessing: Boolean
-    hearabout: String 
-    previouspurchase: String 
-    travel: String 
-    appfee: String
-    appvalid: String
-    commitment: String
-    donate: Boolean
-    accuracy: Boolean
-    comments: String 
-    date: String 
-  }
 
   input ApplicationInput {
     application: _Application

@@ -16,8 +16,6 @@ function Applications() {
     </div>
   }
 
-  console.log(data);
-
   const handleApplication = id => {
     setSelectedApplication(id);
     setShowOne(true);
