@@ -67,25 +67,25 @@ const typeDefs = gql`
     crates: String 
     trainingissues: String 
     commonhealthissues: String 
-    questionaireheat: String
-    questionairefood: String
-    questionairepalate: String
-    questionaireallergy: String
-    questionairespayneuter: String 
-    questionaireproccessing: Boolean
-    questionairehearabout: String 
-    questionairepreviouspurchase: String 
-    questionairetravel: String 
-    questionaireappfee: String
-    questionaireappvalid: String
-    questionairecommitment: String
-    questionairedonate: Boolean
-    questionaireaccuracy: Boolean
-    questionairecomments: String 
-    questionairedate: String 
+    questionnaireheat: String
+    questionnairefood: String
+    questionnairepalate: String
+    questionnaireallergy: String
+    questionnairespayneuter: String 
+    questionnaireproccessing: String
+    questionnairehearabout: String 
+    questionnairepreviouspurchase: String 
+    questionnairetravel: String 
+    questionnaireappfee: String
+    questionnaireappvalid: String
+    questionnairecommitment: String
+    questionnairedonate: String
+    questionnaireaccuracy: String
+    questionnairecomments: String 
+    questionnairedate: String 
   }
 
-  input _Application {
+  input ApplicationInput {
     _id: ID
     name: String 
     age: String
@@ -138,28 +138,24 @@ const typeDefs = gql`
     crates: String 
     trainingissues: String 
     commonhealthissues: String 
-    questionaireheat: String
-    questionairefood: String
-    questionairepalate: String
-    questionaireallergy: String
-    questionairespayneuter: String 
-    questionaireproccessing: Boolean
-    questionairehearabout: String 
-    questionairepreviouspurchase: String 
-    questionairetravel: String 
-    questionaireappfee: String
-    questionaireappvalid: String
-    questionairecommitment: String
-    questionairedonate: Boolean
-    questionaireaccuracy: Boolean
-    questionairecomments: String 
-    questionairedate: String 
+    questionnaireheat: String
+    questionnairefood: String
+    questionnairepalate: String
+    questionnaireallergy: String
+    questionnairespayneuter: String 
+    questionnaireproccessing: String
+    questionnairehearabout: String 
+    questionnairepreviouspurchase: String 
+    questionnairetravel: String 
+    questionnaireappfee: String
+    questionnaireappvalid: String
+    questionnairecommitment: String
+    questionnairedonate: String
+    questionnaireaccuracy: String
+    questionnairecomments: String 
+    questionnairedate: String 
   }  
 
-  input ApplicationInput {
-    application: _Application
-  
-  }
   type Query {
     users: [User]
     user(id: ID!): User

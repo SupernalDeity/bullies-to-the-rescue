@@ -110,22 +110,22 @@ export const ADD_APPLICATION = gql`
     crates
     trainingissues
     commonhealthissues
-    questionaireheat
-    questionairefood
-    questionairepalate
-    questionaireallergy
-    questionairespayneuter
-    questionaireproccessing
-    questionairehearabout
-    questionairepreviouspurchase
-    questionairetravel
-    questionaireappfee
-    questionaireappvalid
-    questionairecommitment
-    questionairedonate
-    questionaireaccuracy
-    questionairecomments
-    questionairedate
+    questionnaireheat
+    questionnairefood
+    questionnairepalate
+    questionnaireallergy
+    questionnairespayneuter
+    questionnaireproccessing
+    questionnairehearabout
+    questionnairepreviouspurchase
+    questionnairetravel
+    questionnaireappfee
+    questionnaireappvalid
+    questionnairecommitment
+    questionnairedonate
+    questionnaireaccuracy
+    questionnairecomments
+    questionnairedate
   }
 }
 `;
