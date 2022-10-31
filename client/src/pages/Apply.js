@@ -23,7 +23,6 @@ const Apply = () => {
     ownbulldog: "",
     medicalissues: "",
     otherissues: "",
-    dogbehaviorissues: "",
     dwellinginfo: "",
     landlordname: "",
     landlordnumber: "",
@@ -57,22 +56,22 @@ const Apply = () => {
     crates: "",
     trainingissues: "",
     commonhealthissues: "",
-    questionareheat: "",
-    questionarefood: "",
-    questionarepalate: "",
-    questionareallergy: "",
-    questionarespayneuter: "",
-    questionareproccessing: "",
-    questionarehearabout: "",
-    questionarepreviouspurchase: "",
-    questionaretravel: "",
-    questionareappfee: "",
-    questionareappvalid: "",
-    questionarecommitment: "",
-    questionaredonate: "",
-    questionareaccuracy: "",
-    questionarecomments: "",
-    questionaredate: "",
+    questionnaireheat: "",
+    questionnairefood: "",
+    questionnairepalate: "",
+    questionnaireallergy: "",
+    questionnairespayneuter: "",
+    questionnaireproccessing: "",
+    questionnairehearabout: "",
+    questionnairepreviouspurchase: "",
+    questionnairetravel: "",
+    questionnaireappfee: "",
+    questionnaireappvalid: "",
+    questionnairecommitment: "",
+    questionnairedonate: "",
+    questionnaireaccuracy: "",
+    questionnairecomments: "",
+    questionnairedate: "",
   });
   const [addApplication, { error, data }] = useMutation(ADD_APPLICATION);
 
@@ -90,7 +89,7 @@ const Apply = () => {
 
     try {
       const { data } = await addApplication({
-        variables: { ...applyState },
+        variables: {input: { ...applyState }},
       });
     } catch (e) {
       console.error(e);
@@ -98,16 +97,16 @@ const Apply = () => {
   };
 
   const renderForm = () => {
-    // if (data) {
-    //   return (
-    //     // <div
-    //     //   className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3"
-    //     //   role="alert"
-    //     // >
-    //     //   Success! You may now head <Link to="/">back to the homepage.</Link>
-    //     // </div>
-    //   // );
-    // }
+    if (data) {
+      return (
+        <div
+          className="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3"
+          role="alert"
+        >
+          Success! Your application is submitted.
+        </div>
+      );
+    }
   };
 
   return (
@@ -785,7 +784,7 @@ const Apply = () => {
                       <input
                         type="text"
                         name="medicalneeds"
-                        id="medicalneeds" 
+                        id="medicalneeds"
                         value={applyState.medicalneeds}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -1018,7 +1017,7 @@ const Apply = () => {
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does your family understand that rescued Bulldogs may
-                        have house-training issues, especially at first? If not, 
+                        have house-training issues, especially at first? If not,
                       </label>
                       <input
                         type="text"
@@ -1057,14 +1056,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesheat"
-                            name="questionareheat"
+                            name="questionnaireheat"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareheat"
+                            htmlFor="questionnaireheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1073,14 +1072,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noheat"
-                            name="questionareheat"
+                            name="questionnaireheat"
                             type="radio"
                             value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareheat"
+                            htmlFor="questionnaireheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1089,14 +1088,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkheat"
-                            name="questionareheat"
+                            name="questionnaireheat"
                             type="radio"
                             value="not sure"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareheat"
+                            htmlFor="questionnaireheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -1114,14 +1113,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesfood"
-                            name="questionarefood"
+                            name="questionnairefood"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarefood"
+                            htmlFor="questionnairefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1130,14 +1129,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nofood"
-                            name="questionarefood"
+                            name="questionnairefood"
                             type="radio"
                             value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarefood"
+                            htmlFor="questionnairefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1146,14 +1145,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkfood"
-                            name="questionarefood"
+                            name="questionnairefood"
                             type="radio"
                             value="not sure"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarefood"
+                            htmlFor="questionnairefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -1171,14 +1170,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yespalate"
-                            name="questionarepalate"
+                            name="questionnairepalate"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarepalate"
+                            htmlFor="questionnairepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1187,14 +1186,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nopalate"
-                            name="questionarepalate"
+                            name="questionnairepalate"
                             type="radio"
                             value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarepalate"
+                            htmlFor="questionnairepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1203,14 +1202,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkpalate"
-                            name="questionarepalate"
+                            name="questionnairepalate"
                             type="radio"
                             value="not sure"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarepalate"
+                            htmlFor="questionnairepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -1228,14 +1227,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesallergy"
-                            name="questionareallergy"
+                            name="questionnaireallergy"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareallergy"
+                            htmlFor="questionnaireallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1244,14 +1243,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noallergy"
-                            name="questionareallergy"
+                            name="questionnaireallergy"
                             type="radio"
                             value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareallergy"
+                            htmlFor="questionnaireallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1260,14 +1259,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkallergy"
-                            name="questionareallergy"
+                            name="questionnaireallergy"
                             type="radio"
                             value="not sure"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareallergy"
+                            htmlFor="questionnaireallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -1278,7 +1277,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="questionarespayneuter"
+                        htmlFor="questionnairespayneuter"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All Bulldogs adopted from Bullies 2 the Rescue will be
@@ -1288,9 +1287,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="questionarespayneuter"
-                        id="questionarespayneuter"
-                        value={applyState.questionarespayneuter}
+                        name="questionnairespayneuter"
+                        id="questionnairespayneuter"
+                        value={applyState.questionnairespayneuter}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -1308,14 +1307,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesappstatus"
-                            name="questionareproccessing"
+                            name="questionnaireproccessing"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareproccessing"
+                            htmlFor="questionnaireproccessing"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1324,14 +1323,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noappstatus"
-                            name="questionareproccessing"
+                            name="questionnaireproccessing"
                             type="radio"
                             value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareproccessing"
+                            htmlFor="questionnaireproccessing"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1342,7 +1341,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="questionarehearabout"
+                        htmlFor="questionnairehearabout"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How did you hear about Bullies 2 the Rescue? (ex:
@@ -1351,9 +1350,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="questionarehearabout"
-                        id="questionarehearabout"
-                        value={applyState.questionarehearabout}
+                        name="questionnairehearabout"
+                        id="questionnairehearabout"
+                        value={applyState.questionnairehearabout}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -1361,7 +1360,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="questionarepreviouspurchase"
+                        htmlFor="questionnairepreviouspurchase"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Have you applied to purchase from a breeder or adopt
@@ -1370,9 +1369,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="questionarepreviouspurchase"
-                        id="questionarepreviouspurchase"
-                        value={applyState.questionarepreviouspurchase}
+                        name="questionnairepreviouspurchase"
+                        id="questionnairepreviouspurchase"
+                        value={applyState.questionnairepreviouspurchase}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -1387,14 +1386,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yestravel"
-                            name="questionaretravel"
+                            name="questionnairetravel"
                             type="radio"
                             value="yes, no problem"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaretravel"
+                            htmlFor="questionnairetravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, no problem!
@@ -1403,14 +1402,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="halfwaytravel"
-                            name="questionaretravel"
+                            name="questionnairetravel"
                             type="radio"
                             value="meet me halfway"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaretravel"
+                            htmlFor="questionnairetravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I need someone to meet me halfway
@@ -1419,14 +1418,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="notravel"
-                            name="questionaretravel"
+                            name="questionnairetravel"
                             type="radio"
                             value="bring to me"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaretravel"
+                            htmlFor="questionnairetravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I want to hire someone to bring me my bulldog
@@ -1435,14 +1434,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idktravel"
-                            name="questionaretravel"
+                            name="questionnairetravel"
                             type="radio"
                             value="unsure"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaretravel"
+                            htmlFor="questionnairetravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Unsure, will need to discuss during the phone
@@ -1463,14 +1462,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesadoptfee"
-                            name="questionareappfee"
+                            name="questionnaireappfee"
                             type="radio"
                             value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareappfee"
+                            htmlFor="questionnaireappfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, I undestand
@@ -1479,14 +1478,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noadoptfee"
-                            name="questionareappfee"
+                            name="questionnaireappfee"
                             type="radio"
                             value="I have not paid the adoption fee"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareappfee"
+                            htmlFor="questionnaireappfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             There's an adoption fee?
@@ -1506,14 +1505,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesagreement"
-                            name="questionareappvalid"
+                            name="questionnaireappvalid"
                             type="radio"
                             value="I agree"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareappvalid"
+                            htmlFor="questionnaireappvalid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I agree
@@ -1522,14 +1521,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noagreement"
-                            name="questionareappvalid"
+                            name="questionnaireappvalid"
                             type="radio"
                             value="I do NOT agree"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareappvalid"
+                            htmlFor="questionnaireappvalid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I do NOT agree
@@ -1557,14 +1556,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesagreement2"
-                            name="questionarecommitment"
+                            name="questionnairecommitment"
                             type="radio"
                             value="I agree"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarecommitment"
+                            htmlFor="questionnairecommitment"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, we/ I agree and understand
@@ -1573,14 +1572,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noagreement2"
-                            name="questionarecommitment"
+                            name="questionnairecommitment"
                             type="radio"
                             value="I do NOT agree"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionarecommitment"
+                            htmlFor="questionnairecommitment"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I didn't read it, I just want a cute bulldog
@@ -1601,14 +1600,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesfeepaid"
-                            name="questionaredonate"
+                            name="questionnairedonate"
                             type="radio"
                             value="Yes, I have donated"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaredonate"
+                            htmlFor="questionnairedonate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1617,14 +1616,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nofeepaid"
-                            name="questionaredonate"
+                            name="questionnairedonate"
                             type="radio"
                             value="No, I have NOT donated"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionaredonate"
+                            htmlFor="questionnairedonate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -1644,14 +1643,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesaccurate"
-                            name="questionareaccuracy"
+                            name="questionnaireaccuracy"
                             type="radio"
                             value="Yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareaccuracy"
+                            htmlFor="questionnaireaccuracy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -1660,14 +1659,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yeskindaaccurate"
-                            name="questionareaccuracy"
+                            name="questionnaireaccuracy"
                             type="radio"
                             value="Yes, but I need to explain something on the interview"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="questionareaccuracy"
+                            htmlFor="questionnaireaccuracy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes but I need to explain something on the interview
@@ -1678,16 +1677,16 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="questionarecomments"
+                        htmlFor="questionnairecomments"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Comments, Questions, or Concerns?
                       </label>
                       <input
                         type="text"
-                        name="questionarecomments"
-                        id="questionarecomments"
-                        value={applyState.questionarecomments}
+                        name="questionnairecomments"
+                        id="questionnairecomments"
+                        value={applyState.questionnairecomments}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -1695,16 +1694,16 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="questionaredate"
+                        htmlFor="questionnairedate"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Date and time:
                       </label>
                       <input
                         type="text"
-                        name="questionaredate"
-                        id="questionaredate"
-                        value={applyState.questionaredate}
+                        name="questionnairedate"
+                        id="questionnairedate"
+                        value={applyState.questionnairedate}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -1723,6 +1722,10 @@ const Apply = () => {
             </form>
           </div>
         </div>
+      </div>
+      <div className='flex justify-center'>
+        {renderForm()}
+        {error && <div className="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">Please make sure all questions are answered!</div>}
       </div>
     </>
   );

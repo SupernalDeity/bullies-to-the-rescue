@@ -47,8 +47,8 @@ const resolvers = {
 
       return { token, user };
     },
-    applicationSubmit: async (_, {input}) => {
-      const apply = await Application.create(input.application);
+    applicationSubmit: async (_, { input }) => {
+      const apply = await Application.create(input);
       return apply;
     }
   }

@@ -61,7 +61,6 @@ export const APPLICATION = gql`
     ownbulldog
     medicalissues
     otherissues
-    dogbehaviorissues
     dwellinginfo
     landlordname
     landlordnumber
@@ -95,22 +94,22 @@ export const APPLICATION = gql`
     crates
     trainingissues
     commonhealthissues
-    questionaireheat
-    questionairefood
-    questionairepalate
-    questionaireallergy
-    questionairespayneuter
-    questionaireproccessing
-    questionairehearabout
-    questionairepreviouspurchase
-    questionairetravel
-    questionaireappfee
-    questionaireappvalid
-    questionairecommitment
-    questionairedonate
-    questionaireaccuracy
-    questionairecomments
-    questionairedate
+    questionnaireheat
+    questionnairefood
+    questionnairepalate
+    questionnaireallergy
+    questionnairespayneuter
+    questionnaireproccessing
+    questionnairehearabout
+    questionnairepreviouspurchase
+    questionnairetravel
+    questionnaireappfee
+    questionnaireappvalid
+    questionnairecommitment
+    questionnairedonate
+    questionnaireaccuracy
+    questionnairecomments
+    questionnairedate
     }
   }
 `

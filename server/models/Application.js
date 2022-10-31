@@ -8,7 +8,7 @@ const appSchema = new Schema(
       trim: true,
     },
     age: {
-      type: Number,
+      type: String,
       required: true
     },
     coapplicant: {
@@ -17,7 +17,7 @@ const appSchema = new Schema(
       trim: true
     },
     coapplicantage: {
-      type: Number,
+      type: String,
       required: true,
     },
     address: {
@@ -75,10 +75,6 @@ const appSchema = new Schema(
       required: true,
     },
     otherissues: {
-      type: String,
-      required: true,
-    },
-    dogbehaviorissues: {
       type: String,
       required: true,
     },
@@ -214,67 +210,67 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    questionaireheat: {
+    questionnaireheat: {
       type: String,
       required: true,
     },
-    questionairefood: {
+    questionnairefood: {
       type: String,
       required: true,
     },
-    questionairepalate: {
+    questionnairepalate: {
       type: String,
       required: true,
     },
-    questionaireallergy: {
+    questionnaireallergy: {
       type: String,
       required: true,
     },
-    questionairespayneuter: {
+    questionnairespayneuter: {
       type: String,
       required: true,
     },
-    questionaireproccessing: {
-      type: Boolean,
-      required: true,
-    },
-    questionairehearabout: {
+    questionnaireproccessing: {
       type: String,
       required: true,
     },
-    questionairepreviouspurchase: {
+    questionnairehearabout: {
       type: String,
       required: true,
     },
-    questionairetravel: {
+    questionnairepreviouspurchase: {
       type: String,
       required: true,
     },
-    questionaireappfee: {
+    questionnairetravel: {
       type: String,
       required: true,
     },
-    questionaireappvalid: {
+    questionnaireappfee: {
       type: String,
       required: true,
     },
-    questionairecommitment: {
+    questionnaireappvalid: {
       type: String,
       required: true,
     },
-    questionairedonate: {
-      type: Boolean,
+    questionnairecommitment: {
+      type: String,
       required: true,
     },
-    questionaireaccuracy: {
-      type: Boolean,
+    questionnairedonate: {
+      type: String,
       required: true,
     },
-    questionairecomments: {
+    questionnaireaccuracy: {
+      type: String,
+      required: true,
+    },
+    questionnairecomments: {
       type: String,
       trim: true,
     },
-    questionairedate: {
+    questionnairedate: {
       type: String,
       required: true,
     }

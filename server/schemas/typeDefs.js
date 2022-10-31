@@ -17,9 +17,9 @@ const typeDefs = gql`
   type Application {
     _id: ID
     name: String 
-    age: Int
+    age: String
     coapplicant: String
-    coapplicantage: Int
+    coapplicantage: String
     address: String 
     addresstwo: String
     email: String 
@@ -34,7 +34,6 @@ const typeDefs = gql`
     ownbulldog: String
     medicalissues: String
     otherissues: String 
-    dogbehaviorissues: String
     dwellinginfo: String
     landlordname: String
     landlordnumber: String
@@ -68,100 +67,95 @@ const typeDefs = gql`
     crates: String 
     trainingissues: String 
     commonhealthissues: String 
-    questionaireheat: String
-    questionairefood: String
-    questionairepalate: String
-    questionaireallergy: String
-    questionairespayneuter: String 
-    questionaireproccessing: Boolean
-    questionairehearabout: String 
-    questionairepreviouspurchase: String 
-    questionairetravel: String 
-    questionaireappfee: String
-    questionaireappvalid: String
-    questionairecommitment: String
-    questionairedonate: Boolean
-    questionaireaccuracy: Boolean
-    questionairecomments: String 
-    questionairedate: String 
+    questionnaireheat: String
+    questionnairefood: String
+    questionnairepalate: String
+    questionnaireallergy: String
+    questionnairespayneuter: String 
+    questionnaireproccessing: String
+    questionnairehearabout: String 
+    questionnairepreviouspurchase: String 
+    questionnairetravel: String 
+    questionnaireappfee: String
+    questionnaireappvalid: String
+    questionnairecommitment: String
+    questionnairedonate: String
+    questionnaireaccuracy: String
+    questionnairecomments: String 
+    questionnairedate: String 
   }
-
-  input _Application {
-    _id: ID
-    name: String 
-    age: Int
-    coapplicant: String
-    coapplicantage: Int
-    address: String 
-    addresstwo: String
-    email: String 
-    phone: String
-    phonetype: String 
-    housemembers: String 
-    occupation: String 
-    employerinfo: String 
-    employerphone: String
-    coappoccupation: String 
-    coappemployerinfo: String
-    ownbulldog: String
-    medicalissues: String
-    otherissues: String 
-    dogbehaviorissues: String
-    dwellinginfo: String
-    landlordname: String
-    landlordnumber: String
-    fencedyard: String
-    stairs: String 
-    water: String 
-    airconditioninghome: String
-    airconditioningcar: String
-    whereday: String 
-    wherenight: String
-    allergy: String
-    familywillingness: String
-    familywhy: String
-    familychildren: String 
-    familychildreninfo: String
-    familychildrensupervise: String
-    dogage: String
-    currentpets: String
-    medicalneeds: String
-    adoptwhen: String
-    surrenderpet: String
-    adoptedanimal: String
-    animalfriends: String
-    bite: String 
-    heartworm: String 
-    vetcare: String 
-    vetinfo: String
-    references: String 
-    behavior: String 
-    correction: String 
-    crates: String 
-    trainingissues: String 
-    commonhealthissues: String 
-    questionaireheat: String
-    questionairefood: String
-    questionairepalate: String
-    questionaireallergy: String
-    questionairespayneuter: String 
-    questionaireproccessing: Boolean
-    questionairehearabout: String 
-    questionairepreviouspurchase: String 
-    questionairetravel: String 
-    questionaireappfee: String
-    questionaireappvalid: String
-    questionairecommitment: String
-    questionairedonate: Boolean
-    questionaireaccuracy: Boolean
-    questionairecomments: String 
-    questionairedate: String 
-  }  
 
   input ApplicationInput {
-    application: _Application
-  
-  }
+    _id: ID
+    name: String 
+    age: String
+    coapplicant: String
+    coapplicantage: String
+    address: String 
+    addresstwo: String
+    email: String 
+    phone: String
+    phonetype: String 
+    housemembers: String 
+    occupation: String 
+    employerinfo: String 
+    employerphone: String
+    coappoccupation: String 
+    coappemployerinfo: String
+    ownbulldog: String
+    medicalissues: String
+    otherissues: String 
+    dwellinginfo: String
+    landlordname: String
+    landlordnumber: String
+    fencedyard: String
+    stairs: String 
+    water: String 
+    airconditioninghome: String
+    airconditioningcar: String
+    whereday: String 
+    wherenight: String
+    allergy: String
+    familywillingness: String
+    familywhy: String
+    familychildren: String 
+    familychildreninfo: String
+    familychildrensupervise: String
+    dogage: String
+    currentpets: String
+    medicalneeds: String
+    adoptwhen: String
+    surrenderpet: String
+    adoptedanimal: String
+    animalfriends: String
+    bite: String 
+    heartworm: String 
+    vetcare: String 
+    vetinfo: String
+    references: String 
+    behavior: String 
+    correction: String 
+    crates: String 
+    trainingissues: String 
+    commonhealthissues: String 
+    questionnaireheat: String
+    questionnairefood: String
+    questionnairepalate: String
+    questionnaireallergy: String
+    questionnairespayneuter: String 
+    questionnaireproccessing: String
+    questionnairehearabout: String 
+    questionnairepreviouspurchase: String 
+    questionnairetravel: String 
+    questionnaireappfee: String
+    questionnaireappvalid: String
+    questionnairecommitment: String
+    questionnairedonate: String
+    questionnaireaccuracy: String
+    questionnairecomments: String 
+    questionnairedate: String 
+  }  
+
   type Query {
     users: [User]
     user(id: ID!): User
