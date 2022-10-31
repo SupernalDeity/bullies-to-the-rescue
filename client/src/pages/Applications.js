@@ -16,8 +16,6 @@ function Applications() {
     </div>
   }
 
-  console.log(data);
-
   const handleApplication = id => {
     setSelectedApplication(id);
     setShowOne(true);
@@ -26,7 +24,7 @@ function Applications() {
   if (!Auth.loggedIn() || !Auth.getProfile().data.admin) {
     return <div className="flex justify-center py-3">
       <h4>
-      These are not the driods you are looking for!
+      These are not the droids you are looking for!
       </h4>
     </div>
   }

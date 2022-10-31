@@ -86,13 +86,13 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    landlordinfo: {
-      name: {
-        type: String
-      },
-      number: {
-        type: String
-      },
+    landlordname: {
+        type: String,
+        required: true,
+    },
+    landlordnumber: {
+      type: String,
+      required: true,
     },
     fencedyard: {
       type: String,
@@ -106,51 +106,45 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    airconditioning: {
-      home: {
+    airconditioninghome: {
         type: String,
         required: true,
       },
-      car: {
-        type: String,
-        required: true,
-      },
+    airconditioningcar: {
+      type: String,
+      required: true,
     },
-    wheredog: {
-      day: {
-        type: String,
-        required: true,
-      },
-      night: {
-        type: String,
-        required: true,
-      },
+    whereday: {
+      type: String,
+      required: true,
+    },
+    wherenight: {
+      type: String,
+      required: true,
     },
     allergy: {
       type: String,
       required: true,
     },
-    family: {
-      willingness: {
-        type: String,
-        required: true,
-      },
-      why: {
-        type: String,
-        required: true,
-      },
-      children: {
-        type: String,
-        required: true,
-      },
-      childreninfo: {
-        type: String,
-        required: true,
-      },
-      childrensupervise: {
-        type: String,
-        required: true,
-      },
+    familywillingness: {
+      type: String,
+      required: true,
+    },
+    familywhy: {
+      type: String,
+      required: true,
+    },
+    familychildren: {
+      type: String,
+      required: true,
+    },
+    familychildreninfo: {
+      type: String,
+      required: true,
+    },
+    familychildrensupervise: {
+      type: String,
+      required: true,
     },
     dogage: {
       type: String,
@@ -220,72 +214,70 @@ const appSchema = new Schema(
       type: String,
       required: true,
     },
-    questionare: {
-      heat: {
-        type: String,
-        required: true,
-      },
-      food: {
-        type: String,
-        required: true,
-      },
-      palate: {
-        type: String,
-        required: true,
-      },
-      allergy: {
-        type: String,
-        required: true,
-      },
-      spayneuter: {
-        type: String,
-        required: true,
-      },
-      proccessing: {
-        type: Boolean,
-        required: true,
-      },
-      hearabout: {
-        type: String,
-        required: true,
-      },
-      previouspurchase: {
-        type: String,
-        required: true,
-      },
-      travel: {
-        type: String,
-        required: true,
-      },
-      appfee: {
-        type: String,
-        required: true,
-      },
-      appvalid: {
-        type: String,
-        required: true,
-      },
-      commitment: {
-        type: String,
-        required: true,
-      },
-      donate: {
-        type: Boolean,
-        required: true,
-      },
-      accuracy: {
-        type: Boolean,
-        required: true,
-      },
-      comments: {
-        type: String,
-        trim: true,
-      },
-      date: {
-        type: String,
-        required: true,
-      }
+    questionaireheat: {
+      type: String,
+      required: true,
     },
+    questionairefood: {
+      type: String,
+      required: true,
+    },
+    questionairepalate: {
+      type: String,
+      required: true,
+    },
+    questionaireallergy: {
+      type: String,
+      required: true,
+    },
+    questionairespayneuter: {
+      type: String,
+      required: true,
+    },
+    questionaireproccessing: {
+      type: Boolean,
+      required: true,
+    },
+    questionairehearabout: {
+      type: String,
+      required: true,
+    },
+    questionairepreviouspurchase: {
+      type: String,
+      required: true,
+    },
+    questionairetravel: {
+      type: String,
+      required: true,
+    },
+    questionaireappfee: {
+      type: String,
+      required: true,
+    },
+    questionaireappvalid: {
+      type: String,
+      required: true,
+    },
+    questionairecommitment: {
+      type: String,
+      required: true,
+    },
+    questionairedonate: {
+      type: Boolean,
+      required: true,
+    },
+    questionaireaccuracy: {
+      type: Boolean,
+      required: true,
+    },
+    questionairecomments: {
+      type: String,
+      trim: true,
+    },
+    questionairedate: {
+      type: String,
+      required: true,
+    }
   },
 )
 

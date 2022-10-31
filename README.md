@@ -34,13 +34,21 @@ Git and GitHub
 
 
 ## Contributing
-### Heather , Syd Wiegman, Jen Arnold, Ted Shishkovskiy and Anthony Perez
-
+### Heather Cruz
 ![Badge](https://img.shields.io/badge/Github-hcruz77-4cbbb9) 
-![Badge](https://img.shields.io/badge/Github-Sydwig-4cbbb9) 
-![Badge](https://img.shields.io/badge/Github-Cannaestia-4cbbb9) 
-![Badge](https://img.shields.io/badge/Github-TheodoreShishkovskiy-4cbbb9) 
-![Badge](https://img.shields.io/badge/Github-SupernalDeity-4cbbb9) 
+https://github.com/hcruz77
+### Syd Wiegman
+![Badge](https://img.shields.io/badge/Github-Sydwig-4cbbb9)
+https://github.com/Sydwig
+### Jen Arnold
+![Badge](https://img.shields.io/badge/Github-Cannaestia-4cbbb9)
+https://github.com/Cannaestia
+### Ted Shishkovskiy
+![Badge](https://img.shields.io/badge/Github-TheodoreShishkovskiy-4cbbb9)
+https://github.com/TheodoreShishkovskiy
+### Anthony Perez
+![Badge](https://img.shields.io/badge/Github-SupernalDeity-4cbbb9)
+https://github.com/SupernalDeity
 
 
 

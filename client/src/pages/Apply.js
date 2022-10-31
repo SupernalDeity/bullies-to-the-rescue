@@ -25,29 +25,21 @@ const Apply = () => {
     otherissues: "",
     dogbehaviorissues: "",
     dwellinginfo: "",
-    landlordinfo: {
-      name: "",
-      number: "",
-    },
+    landlordname: "",
+    landlordnumber: "",
     fencedyard: "",
     stairs: "",
     water: "",
-    airconditioning: {
-      home: "",
-      car: "",
-    },
-    wheredog: {
-      day: "",
-      night: "",
-    },
+    airconditioninghome: "",
+    airconditioningcar: "",
+    whereday: "",
+    wherenight: "",
     allergy: "",
-    family: {
-      willingness: "",
-      why: "",
-      children: "",
-      childreninfo: "",
-      childrensupervise: "",
-    },
+    familywillingness: "",
+    familywhy: "",
+    familychildren: "",
+    familychildreninfo: "",
+    familychildrensupervise: "",
     dogage: "",
     currentpets: "",
     medicalneeds: "",
@@ -65,24 +57,22 @@ const Apply = () => {
     crates: "",
     trainingissues: "",
     commonhealthissues: "",
-    questionare: {
-      heat: "",
-      food: "",
-      palate: "",
-      allergy: "",
-      spayneuter: "",
-      proccessing: "",
-      hearabout: "",
-      previouspurchase: "",
-      travel: "",
-      appfee: "",
-      appvalid: "",
-      commitment: "",
-      donate: "",
-      accuracy: "",
-      comments: "",
-      date: "",
-    },
+    questionareheat: "",
+    questionarefood: "",
+    questionarepalate: "",
+    questionareallergy: "",
+    questionarespayneuter: "",
+    questionareproccessing: "",
+    questionarehearabout: "",
+    questionarepreviouspurchase: "",
+    questionaretravel: "",
+    questionareappfee: "",
+    questionareappvalid: "",
+    questionarecommitment: "",
+    questionaredonate: "",
+    questionareaccuracy: "",
+    questionarecomments: "",
+    questionaredate: "",
   });
   const [addApplication, { error, data }] = useMutation(ADD_APPLICATION);
 
@@ -341,7 +331,7 @@ const Apply = () => {
                         type="text"
                         name="occupation"
                         id="occupation"
-                        value={applyState.oc}
+                        value={applyState.occupation}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -415,1635 +405,56 @@ const Apply = () => {
                       />
                     </div>
 
-                    <fieldset className="col-span-6 sm:col-span-4">
-                      <legend className="contents text-base font-medium text-gray-700">
-                        Has your family ever owned a bulldog?
-                      </legend>
-                      <div className="mt-4 space-y-4">
-                        <div className="flex items-center">
-                          <input
-                            id="nodog"
-                            name="ownbulldog"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            type="checkbox"
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            No, we have never had a bulldog
-                          </label>
-                        </div>
-                        <div className="flex item s-center">
-                          <input
-                            id="english"
-                            name="ownbulldog"
-                            type="checkbox"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            English
-                          </label>
-                        </div>
-                        <div className="flex items-center">
-                          <input
-                            id="french"
-                            name="ownbulldog"
-                            type="checkbox"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            French
-                          </label>
-                        </div>
-                        <div className="flex items-center">
-                          <input
-                            id="olde-english"
-                            name="ownbulldog"
-                            type="checkbox"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            Olde English
-                          </label>
-                        </div>
-                        <div className="flex items-center">
-                          <input
-                            id="american"
-                            name="ownbulldog"
-                            type="checkbox"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            American
-                          </label>
-                        </div>
-                        <div className="flex items-center">
-                          <input
-                            id="mix"
-                            name="ownbulldog"
-                            type="checkbox"
-                            value={applyState.ownbulldog}
-                            onChange={handleChange}
-                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                          />
-                          <label
-                            htmlFor="ownbulldog"
-                            className="ml-3 block text-sm font-medium text-gray-700"
-                          >
-                            Mix
-                          </label>
-                        </div>
-                      </div>
-                    </fieldset>
-
-                    <fieldset className="col-span-6 sm:col-span-4">
-                      <div
-                        className="text-base font-medium text-gray-900"
-                        aria-hidden="true"
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="coappemployerinfo"
+                        className="block text-sm font-medium text-gray-700"
                       >
-                        Please check any medical issues you have direct
-                        experience with for any dog you have personally owned:
-                      </div>
-                      <div className="mt-4 space-y-4">
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="tears"
-                              name="tears"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="tears"
-                              className="font-medium text-gray-700"
-                            >
-                              ACL Tears
-                            </label>
-                          </div>
-                        </div>
+                        Have you ever owned a bulldog? If so, what type:
+                      </label>
+                      <input
+                        type="text"
+                        name="coappemployerinfo"
+                        id="coappemployerinfo"
+                        value={applyState.ownbulldog}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
 
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="addisons"
-                              name="addisons"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="addisons"
-                              className="font-medium text-gray-700"
-                            >
-                              Addison's Disease
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="allergyenv"
-                              name="allergyenv"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="allergyenv"
-                              className="font-medium text-gray-700"
-                            >
-                              Allergies: Environmetal
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="allergyfood"
-                              name="allergyfood"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="allergyfood"
-                              className="font-medium text-gray-700"
-                            >
-                              Allergies: Food
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="arthritis"
-                              name="arthritis"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="arthritis"
-                              className="font-medium text-gray-700"
-                            >
-                              Arthritis
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="pneumonia"
-                              name="pneumonia"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="pneumonia"
-                              className="font-medium text-gray-700"
-                            >
-                              Aspiration Pneumonia
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="ataxia"
-                              name="ataxia"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="ataxia"
-                              className="font-medium text-gray-700"
-                            >
-                              Ataxia
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hemotoma"
-                              name="hemotoma"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hemotoma"
-                              className="font-medium text-gray-700"
-                            >
-                              Aural Hemotoma
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="autoimmune"
-                              name="autoimmune"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="autoimmune"
-                              className="font-medium text-gray-700"
-                            >
-                              Autoimmune Disorders
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="bstones"
-                              name="bstones"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="bstones"
-                              className="font-medium text-gray-700"
-                            >
-                              Bladder Stones
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="blindness"
-                              name="blindness"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="blindness"
-                              className="font-medium text-gray-700"
-                            >
-                              Blindness
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="bloat"
-                              name="bloat"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="bloat"
-                              className="font-medium text-gray-700"
-                            >
-                              Bloat
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="tumors"
-                              name="tumors"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="tumors"
-                              className="font-medium text-gray-700"
-                            >
-                              Brain Tumors
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="cancer"
-                              name="cancer"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="cancer"
-                              className="font-medium text-gray-700"
-                            >
-                              Cancer
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="cherry"
-                              name="cherry"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="cherry"
-                              className="font-medium text-gray-700"
-                            >
-                              Cherry Eye
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="cleft"
-                              name="cleft"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="cleft"
-                              className="font-medium text-gray-700"
-                            >
-                              Cleft Palate
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="crypt"
-                              name="crypt"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="crypt"
-                              className="font-medium text-gray-700"
-                            >
-                              Cryptorchid
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="cushings"
-                              name="cushings"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="cushings"
-                              className="font-medium text-gray-700"
-                            >
-                              Cushing's Disease
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="deafness"
-                              name="deafness"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="deafness"
-                              className="font-medium text-gray-700"
-                            >
-                              Deafness
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="earinfection"
-                              name="earinfection"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="earinfection"
-                              className="font-medium text-gray-700"
-                            >
-                              Ear Infections
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="entropion"
-                              name="entropion"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="entropion"
-                              className="font-medium text-gray-700"
-                            >
-                              Entropion
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="gastritis"
-                              name="gastritis"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="gastritis"
-                              className="font-medium text-gray-700"
-                            >
-                              Gastritis
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="murmurs"
-                              name="murmurs"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="murmurs"
-                              className="font-medium text-gray-700"
-                            >
-                              Heart Murmurs
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="heartworm"
-                              name="heartworm"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="heartworm"
-                              className="font-medium text-gray-700"
-                            >
-                              Heart Worms
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="stroke"
-                              name="stroke"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="stroke"
-                              className="font-medium text-gray-700"
-                            >
-                              Heat Stroke/ Stress
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hemivert"
-                              name="hemivert"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hemivert"
-                              className="font-medium text-gray-700"
-                            >
-                              Hemivertebrae
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hoodvulva"
-                              name="hoodvulva"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hoodvulva"
-                              className="font-medium text-gray-700"
-                            >
-                              Hooded Vulva
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hotspot"
-                              name="hotspot"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hotspot"
-                              className="font-medium text-gray-700"
-                            >
-                              Hot Spots
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hydrocephalus"
-                              name="hydrocephalus"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hydrocephalus"
-                              className="font-medium text-gray-700"
-                            >
-                              Hydrocephalus
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hypoplastic"
-                              name="hypoplastic"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hypoplastic"
-                              className="font-medium text-gray-700"
-                            >
-                              Hypoplastic Trachea
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="tailpocket"
-                              name="tailpocket"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="tailpocket"
-                              className="font-medium text-gray-700"
-                            >
-                              Infected Tail Pocket
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="cysts"
-                              name="cysts"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="cysts"
-                              className="font-medium text-gray-700"
-                            >
-                              Interdigital Cysts
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="ivdd"
-                              name="ivdd"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="ivdd"
-                              className="font-medium text-gray-700"
-                            >
-                              Intervertebral disc disease (IVDD)
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="intestinalblock"
-                              name="intestinalblock"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="intestinalblock"
-                              className="font-medium text-gray-700"
-                            >
-                              Intestinal Blockage
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="intestinalworm"
-                              name="intestinalworm"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="intestinalworm"
-                              className="font-medium text-gray-700"
-                            >
-                              Intestinal Worms
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="ibs"
-                              name="ibs"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="ibs"
-                              className="font-medium text-gray-700"
-                            >
-                              Irratable Bowel Syndrome
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="luxpatella"
-                              name="luxpatella"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="luxpatella"
-                              className="font-medium text-gray-700"
-                            >
-                              Luxating Patella
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="mamtumor"
-                              name="mamtumor"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="mamtumor"
-                              className="font-medium text-gray-700"
-                            >
-                              Mammary Tumors
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="megacolon"
-                              name="megacolon"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="megacolon"
-                              className="font-medium text-gray-700"
-                            >
-                              Mega Colon
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="megaesophagus"
-                              name="megaesophagus"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="megaesophagus"
-                              className="font-medium text-gray-700"
-                            >
-                              Mega Esophagus
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="palatesurgery"
-                              name="palatesurgery"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="palatesurgery"
-                              className="font-medium text-gray-700"
-                            >
-                              Palate Surgery
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="pemphigus"
-                              name="pemphigus"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="pemphigus"
-                              className="font-medium text-gray-700"
-                            >
-                              Pemphigus
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="prolapsedanus"
-                              name="prolapsedanus"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="prolapsedanus"
-                              className="font-medium text-gray-700"
-                            >
-                              Prolapsed Anus
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="prolapsedurethra"
-                              name="prolapsedurethra"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="prolapsedurethra"
-                              className="font-medium text-gray-700"
-                            >
-                              Polapsed Urethra
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="pulmsteno"
-                              name="pulmsteno"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="pulmsteno"
-                              className="font-medium text-gray-700"
-                            >
-                              Pulmonary Stenosis
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="pyometra"
-                              name="pyometra"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="pyometra"
-                              className="font-medium text-gray-700"
-                            >
-                              Pyometra
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="regurgitation"
-                              name="regurgitation"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="regurgitation"
-                              className="font-medium text-gray-700"
-                            >
-                              Regurgitation
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="ringworm"
-                              name="ringworm"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="ringworm"
-                              className="font-medium text-gray-700"
-                            >
-                              Ringworm
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="seizures"
-                              name="seizures"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="seizures"
-                              className="font-medium text-gray-700"
-                            >
-                              Seizures
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="spinab"
-                              name="spinab"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="spinab"
-                              className="font-medium text-gray-700"
-                            >
-                              Spina Bifida
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="stenoticnares"
-                              name="stenoticnares"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="stenoticnares"
-                              className="font-medium text-gray-700"
-                            >
-                              Stenotic Nares
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="swimmers"
-                              name="swimmers"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="swimmers"
-                              className="font-medium text-gray-700"
-                            >
-                              Swimmer's Syndrome
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="notail"
-                              name="notail"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="notail"
-                              className="font-medium text-gray-700"
-                            >
-                              Tail Amputation
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="tearstain"
-                              name="tearstain"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="tearstain"
-                              className="font-medium text-gray-700"
-                            >
-                              Tear Stains
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="tripod"
-                              name="tripod"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="tripod"
-                              className="font-medium text-gray-700"
-                            >
-                              Tripod (Missing Limb)
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="urinaryincontinence"
-                              name="urinaryincontinence"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="urinaryincontinence"
-                              className="font-medium text-gray-700"
-                            >
-                              Urinary Incontinence
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="uti"
-                              name="uti"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="uti"
-                              className="font-medium text-gray-700"
-                            >
-                              Urinary Tract Infections
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="absolutenothing"
-                              name="absoluenothing"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="absolutenothing"
-                              className="font-medium text-gray-700"
-                            >
-                              None of the above
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
-
-                    <fieldset className="col-span-6 sm:col-span-4">
-                      <div
-                        className="text-base font-medium text-gray-900"
-                        aria-hidden="true"
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="coappemployerinfo"
+                        className="block text-sm font-medium text-gray-700"
                       >
-                        How many of the following behaviors do you have direct
-                        experience in dealing with for any dogs you have been
-                        responsible for:
-                      </div>
-                      <div className="mt-4 space-y-4">
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="boundaryreact"
-                              name="boundaryreact"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="boundaryreact"
-                              className="font-medium text-gray-700"
-                            >
-                              Boundary reactivity (crate aggression, climbing or
-                              knocking down babygates)
-                            </label>
-                          </div>
-                        </div>
+                        Please list any medical issues you have direct experience with for any dog you have personally owned:
+                      </label>
+                      <input
+                        type="text"
+                        name="coappemployerinfo"
+                        id="coappemployerinfo"
+                        value={applyState.medicalissues}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
 
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="destructive"
-                              name="destructive"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="destructive"
-                              className="font-medium text-gray-700"
-                            >
-                              Destructive behaviors (chewing shoes, doors,
-                              baseboards, furniture)
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="dislikegender"
-                              name="dislikegender"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="dislikegender"
-                              className="font-medium text-gray-700"
-                            >
-                              Dislike of men or women in general
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="doordash"
-                              name="doordash"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="doordash"
-                              className="font-medium text-gray-700"
-                            >
-                              Door dashing
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="scarycar"
-                              name="scarycar"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="scarycar"
-                              className="font-medium text-gray-700"
-                            >
-                              Fearful of car rides/ car sickness
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="scaryvet"
-                              name="scaryvet"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="scaryvet"
-                              className="font-medium text-gray-700"
-                            >
-                              Feaful of vet
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="foodaggression"
-                              name="foodaggression"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="foodaggression"
-                              className="font-medium text-gray-700"
-                            >
-                              Food aggression
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="preydrive"
-                              name="preydrive"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="preydrive"
-                              className="font-medium text-gray-700"
-                            >
-                              High prey drive
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="humper"
-                              name="humper"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="humper"
-                              className="font-medium text-gray-700"
-                            >
-                              Humping
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="nocleaning"
-                              name="nocleaning"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="nocleaning"
-                              className="font-medium text-gray-700"
-                            >
-                              Intolerance of grooming/ ear cleaning/ eye drops
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hatekids"
-                              name="hatekids"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hatekids"
-                              className="font-medium text-gray-700"
-                            >
-                              Intolerance of kids
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="hatedogs"
-                              name="hatedogs"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="hatedogs"
-                              className="font-medium text-gray-700"
-                            >
-                              Intolerance of other dogs (either selective or
-                              perceived “dog aggressive”)
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="leashaggression"
-                              name="leashaggression"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="leashaggression"
-                              className="font-medium text-gray-700"
-                            >
-                              Leash aggression
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="myterritory"
-                              name="myterritory"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="myterritory"
-                              className="font-medium text-gray-700"
-                            >
-                              Marking territory
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="playbite"
-                              name="playbite"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="playbite"
-                              className="font-medium text-gray-700"
-                            >
-                              Play biting/ mouthing
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="eatpoop"
-                              name="eatpoop"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="eatpoop"
-                              className="font-medium text-gray-700"
-                            >
-                              Poop eating
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="strangerdanger"
-                              name="strangerdanger"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="strangerdanger"
-                              className="font-medium text-gray-700"
-                            >
-                              Reaction to strangers/ people entering the home
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="resourceguard"
-                              name="resourceguard"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="resourceguard"
-                              className="font-medium text-gray-700"
-                            >
-                              Resource guarding
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="seperationanxiety"
-                              name="seperationanxiety"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="seperationanxiety"
-                              className="font-medium text-gray-700"
-                            >
-                              Seperation Anxiety
-                            </label>
-                          </div>
-                        </div>
-
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="mytoys"
-                              name="mytoys"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="mytoys"
-                              className="font-medium text-gray-700"
-                            >
-                              Toy possession/ aggression
-                            </label>
-                          </div>
-                        </div>
-                        <div className="flex items-start">
-                          <div className="flex h-5 items-center">
-                            <input
-                              id="noprobs"
-                              name="noprobs"
-                              type="checkbox"
-                              className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                            />
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label
-                              htmlFor="noprobs"
-                              className="font-medium text-gray-700"
-                            >
-                              None of the above
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </fieldset>
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="coappemployerinfo"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Please list any other issues you have direct experience with for any dog you have personally owned:
+                      </label>
+                      <input
+                        type="text"
+                        name="coappemployerinfo"
+                        id="coappemployerinfo"
+                        value={applyState.otherissues}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
@@ -2064,16 +475,33 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="landlordinfoname"
+                        htmlFor="landlordname"
                         className="block text-sm font-medium text-gray-700"
                       >
-                        Landlord's Name and Number
+                        Landlord's Name
                       </label>
                       <input
                         type="text"
-                        name="landlordinfo"
-                        id="landlordinfoname"
-                        value={applyState.landlordinfo.name}
+                        name="landlordname"
+                        id="landlordname"
+                        value={applyState.landlordname}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="landlordnumber"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Landlord's Number
+                      </label>
+                      <input
+                        type="text"
+                        name="landlordnumber"
+                        id="landlordnumber"
+                        value={applyState.landlordnumber}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -2143,43 +571,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="airconditioning"
+                        name="airconditioninghome"
                         id="airconditioninghome"
-                        value={applyState.airconditioning.home}
-                        onChange={handleChange}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      />
-                    </div>
-
-                    <div className="col-span-6 sm:col-span-4">
-                      <label
-                        htmlFor="wheredogday"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Where would your bulldog be kept during the day?
-                      </label>
-                      <input
-                        type="text"
-                        name="wheredog"
-                        id="wheredogday"
-                        value={applyState.wheredog.day}
-                        onChange={handleChange}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
-                      />
-                    </div>
-
-                    <div className="col-span-6 sm:col-span-4">
-                      <label
-                        htmlFor="wheredognight"
-                        className="block text-sm font-medium text-gray-700"
-                      >
-                        Where would your bulldog be kept at night?
-                      </label>
-                      <input
-                        type="text"
-                        name="wheredog"
-                        id="wheredognight"
-                        value={applyState.wheredog.night}
+                        value={applyState.airconditioninghome}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -2194,9 +588,43 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="airconditioning"
+                        name="airconditioningcar"
                         id="airconditioningcar"
-                        value={applyState.airconditioning.car}
+                        value={applyState.airconditioningcar}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="whereday"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Where would your bulldog be kept during the day?
+                      </label>
+                      <input
+                        type="text"
+                        name="whereday"
+                        id="whereday"
+                        value={applyState.whereday}
+                        onChange={handleChange}
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      />
+                    </div>
+
+                    <div className="col-span-6 sm:col-span-4">
+                      <label
+                        htmlFor="wherenight"
+                        className="block text-sm font-medium text-gray-700"
+                      >
+                        Where would your bulldog be kept at night?
+                      </label>
+                      <input
+                        type="text"
+                        name="wherenight"
+                        id="wherenight"
+                        value={applyState.wherenight}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -2221,7 +649,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="willingness"
+                        htmlFor="familywillingness"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All family members in favor of adopting? (emotionally
@@ -2231,9 +659,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="willingness"
-                        id="willingness"
-                        value={applyState.family.willingness}
+                        name="familywillingness"
+                        id="familywillingness"
+                        value={applyState.familywillingness}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -2241,60 +669,68 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="whyudothis"
+                        htmlFor="familywhy"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Why do you wish to rescue?
                       </label>
                       <input
                         type="text"
-                        name="whyudothis"
-                        id="whyudothis"
+                        name="familywhy"
+                        id="familywhy"
+                        value={applyState.familywhy}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="goodwchild"
+                        htmlFor="familychildren"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Does the dog have to be good with children?
                       </label>
                       <input
                         type="text"
-                        name="goodwchild"
-                        id="goodwchild"
+                        name="familychildren"
+                        id="familychildren"
+                        value={applyState.familychildren}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="childvisit"
+                        htmlFor="familychildreninfo"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Do childen visit you home? Ages and how often?
                       </label>
                       <input
                         type="text"
-                        name="childvisit"
-                        id="childvisit"
+                        name="familychildreninfo"
+                        id="familychildreninfo"
+                        value={applyState.familychildreninfo}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="childsupervise"
+                        htmlFor="familychildrensupervise"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Are you willing to supervise the bulldog with children?
                       </label>
                       <input
                         type="text"
-                        name="childsupervise"
-                        id="childsupervise"
+                        name="familychildrensupervise"
+                        id="familychildrensupervise"
+                        value={applyState.familychildrensupervise}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2621,14 +1057,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesheat"
-                            name="heat"
+                            name="questionareheat"
                             type="radio"
-                            value={applyState.questionare.heat}
+                            value="yes"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesheat"
+                            htmlFor="questionareheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2637,14 +1073,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noheat"
-                            name="heat"
+                            name="questionareheat"
                             type="radio"
-                            value={applyState.questionare.heat}
+                            value="no"
                             onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noheat"
+                            htmlFor="questionareheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2653,14 +1089,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkheat"
-                            name="heat"
+                            name="questionareheat"
                             type="radio"
-                            value={applyState.questionare.heat}
-                            onSelect={handleChange}
+                            value="not sure"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="idkheat"
+                            htmlFor="questionareheat"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2678,12 +1114,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesfood"
-                            name="premiumfood"
+                            name="questionarefood"
                             type="radio"
+                            value="yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesfood"
+                            htmlFor="questionarefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2692,12 +1130,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nofood"
-                            name="premiumfood"
+                            name="questionarefood"
                             type="radio"
+                            value="no"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nofood"
+                            htmlFor="questionarefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2706,12 +1146,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkfood"
-                            name="premiumfood"
+                            name="questionarefood"
                             type="radio"
+                            value="not sure"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="idkfood"
+                            htmlFor="questionarefood"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2729,12 +1171,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yespalate"
-                            name="softpalate"
+                            name="questionarepalate"
                             type="radio"
+                            value="yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yespalate"
+                            htmlFor="questionarepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2743,12 +1187,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nopalate"
-                            name="softpalate"
+                            name="questionarepalate"
                             type="radio"
+                            value="no"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nopalate"
+                            htmlFor="questionarepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2757,12 +1203,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkpalate"
-                            name="softpalate"
+                            name="questionarepalate"
                             type="radio"
+                            value="not sure"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="idkpalate"
+                            htmlFor="questionarepalate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2780,12 +1228,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesallergy"
-                            name="allergyaware"
+                            name="questionareallergy"
                             type="radio"
+                            value="yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesallergy"
+                            htmlFor="questionareallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2794,12 +1244,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noallergy"
-                            name="allergyaware"
+                            name="questionareallergy"
                             type="radio"
+                            value="no"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noallergy"
+                            htmlFor="questionareallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2808,12 +1260,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idkallergy"
-                            name="allergyaware"
+                            name="questionareallergy"
                             type="radio"
+                            value="not sure"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="idkallergy"
+                            htmlFor="questionareallergy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Not sure
@@ -2824,7 +1278,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="spayneuter"
+                        htmlFor="questionarespayneuter"
                         className="block text-sm font-medium text-gray-700"
                       >
                         All Bulldogs adopted from Bullies 2 the Rescue will be
@@ -2834,9 +1288,9 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="spayneuter"
-                        id="spayneuter"
-                        value={applyState.spayneuter}
+                        name="questionarespayneuter"
+                        id="questionarespayneuter"
+                        value={applyState.questionarespayneuter}
                         onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
@@ -2854,12 +1308,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesappstatus"
-                            name="appstatus"
+                            name="questionareproccessing"
                             type="radio"
+                            value="yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesappstatus"
+                            htmlFor="questionareproccessing"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -2868,12 +1324,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noappstatus"
-                            name="appstatus"
+                            name="questionareproccessing"
                             type="radio"
+                            value="no"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noappstatus"
+                            htmlFor="questionareproccessing"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -2884,7 +1342,7 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="hearsay"
+                        htmlFor="questionarehearabout"
                         className="block text-sm font-medium text-gray-700"
                       >
                         How did you hear about Bullies 2 the Rescue? (ex:
@@ -2893,15 +1351,17 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="hearsay"
-                        id="hearsay"
+                        name="questionarehearabout"
+                        id="questionarehearabout"
+                        value={applyState.questionarehearabout}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="otheradoption"
+                        htmlFor="questionarepreviouspurchase"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Have you applied to purchase from a breeder or adopt
@@ -2910,8 +1370,10 @@ const Apply = () => {
                       </label>
                       <input
                         type="text"
-                        name="otheradoption"
-                        id="otheradoption"
+                        name="questionarepreviouspurchase"
+                        id="questionarepreviouspurchase"
+                        value={applyState.questionarepreviouspurchase}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -2925,12 +1387,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yestravel"
-                            name="willingtotravel"
+                            name="questionaretravel"
                             type="radio"
+                            value="yes, no problem"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yestravel"
+                            htmlFor="questionaretravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, no problem!
@@ -2939,12 +1403,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="halfwaytravel"
-                            name="willingtotravel"
+                            name="questionaretravel"
                             type="radio"
+                            value="meet me halfway"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="halfwaytravel"
+                            htmlFor="questionaretravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I need someone to meet me halfway
@@ -2953,12 +1419,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="notravel"
-                            name="willingtotravel"
+                            name="questionaretravel"
                             type="radio"
+                            value="bring to me"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="notravel"
+                            htmlFor="questionaretravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I want to hire someone to bring me my bulldog
@@ -2967,12 +1435,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="idktravel"
-                            name="willingtotravel"
+                            name="questionaretravel"
                             type="radio"
+                            value="unsure"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="idktravel"
+                            htmlFor="questionaretravel"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Unsure, will need to discuss during the phone
@@ -2993,12 +1463,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesadoptfee"
-                            name="adoptfee"
+                            name="questionareappfee"
                             type="radio"
+                            value="yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesadoptfee"
+                            htmlFor="questionareappfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, I undestand
@@ -3007,12 +1479,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noadoptfee"
-                            name="adoptfee"
+                            name="questionareappfee"
                             type="radio"
+                            value="I have not paid the adoption fee"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noadoptfee"
+                            htmlFor="questionareappfee"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             There's an adoption fee?
@@ -3032,12 +1506,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesagreement"
-                            name="agreement"
+                            name="questionareappvalid"
                             type="radio"
+                            value="I agree"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesagreement"
+                            htmlFor="questionareappvalid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I agree
@@ -3046,12 +1522,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noagreement"
-                            name="agreement"
+                            name="questionareappvalid"
                             type="radio"
+                            value="I do NOT agree"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noagreement"
+                            htmlFor="questionareappvalid"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             We/ I do NOT agree
@@ -3079,12 +1557,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesagreement2"
-                            name="agreement2"
+                            name="questionarecommitment"
                             type="radio"
+                            value="I agree"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesagreement2"
+                            htmlFor="questionarecommitment"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes, we/ I agree and understand
@@ -3093,12 +1573,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="noagreement2"
-                            name="agreement2"
+                            name="questionarecommitment"
                             type="radio"
+                            value="I do NOT agree"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="noagreement2"
+                            htmlFor="questionarecommitment"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No, I didn't read it, I just want a cute bulldog
@@ -3119,12 +1601,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesfeepaid"
-                            name="feepaid"
+                            name="questionaredonate"
                             type="radio"
+                            value="Yes, I have donated"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesfeepaid"
+                            htmlFor="questionaredonate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -3133,12 +1617,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="nofeepaid"
-                            name="feepaid"
+                            name="questionaredonate"
                             type="radio"
+                            value="No, I have NOT donated"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="nofeepaid"
+                            htmlFor="questionaredonate"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             No
@@ -3158,12 +1644,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yesaccurate"
-                            name="accurate"
+                            name="questionareaccuracy"
                             type="radio"
+                            value="Yes"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yesaccurate"
+                            htmlFor="questionareaccuracy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes
@@ -3172,12 +1660,14 @@ const Apply = () => {
                         <div className="flex items-center">
                           <input
                             id="yeskindaaccurate"
-                            name="accurate"
+                            name="questionareaccuracy"
                             type="radio"
+                            value="Yes, but I need to explain something on the interview"
+                            onChange={handleChange}
                             className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-500"
                           />
                           <label
-                            htmlFor="yeskindaaccurate"
+                            htmlFor="questionareaccuracy"
                             className="ml-3 block text-sm font-medium text-gray-700"
                           >
                             Yes but I need to explain something on the interview
@@ -3188,30 +1678,34 @@ const Apply = () => {
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="commentsquestionsconcerns"
+                        htmlFor="questionarecomments"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Comments, Questions, or Concerns?
                       </label>
                       <input
                         type="text"
-                        name="commentsquestionsconcerns"
-                        id="commentsquestionsconcerns"
+                        name="questionarecomments"
+                        id="questionarecomments"
+                        value={applyState.questionarecomments}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
 
                     <div className="col-span-6 sm:col-span-4">
                       <label
-                        htmlFor="datetime"
+                        htmlFor="questionaredate"
                         className="block text-sm font-medium text-gray-700"
                       >
                         Date and time:
                       </label>
                       <input
                         type="text"
-                        name="datetime"
-                        id="datetime"
+                        name="questionaredate"
+                        id="questionaredate"
+                        value={applyState.questionaredate}
+                        onChange={handleChange}
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                     </div>
