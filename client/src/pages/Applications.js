@@ -24,7 +24,7 @@ function Applications() {
   if (!Auth.loggedIn() || !Auth.getProfile().data.admin) {
     return <div className="flex justify-center py-3">
       <h4>
-      These are not the droids you are looking for!
+        These are not the droids you are looking for!
       </h4>
     </div>
   }
@@ -42,7 +42,9 @@ function Applications() {
             <dd className="flex justify-center mt-1 text-md text-gray-900">
               {application.name}'s Application
             </dd>
-            <button onClick={() => handleApplication(application._id)} className="flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">View Application</button>
+            <div className='flex justify-center'>
+              <button onClick={() => handleApplication(application._id)} className="flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">View Application</button>
+            </div>
           </div>
         ))
       }
