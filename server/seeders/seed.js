@@ -1,6 +1,14 @@
 const db = require('../config/connection');
 const { User } = require('../models');
-const userSeeds = require('./userSeeds.json');
+require('dotenv').config()
+
+const userSeeds = 
+  {
+    "username": process.env.REACT_APP_DB_NAME,
+    "email": process.env.REACT_APP_DB_EMAIL,
+    "password": process.env.REACT_APP_DB_PASSWORD,
+    "admin": true
+  }
 
 db.once('open', async () => {
   try {
